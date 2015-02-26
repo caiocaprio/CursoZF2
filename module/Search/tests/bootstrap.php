@@ -90,7 +90,7 @@ if (method_exists($moduleTestCaseClassname, 'setLocator')) {
                     'Zend\Mvc\Router\RouteStackInterface' => array(
                         'instantiator' => array(
                             'Zend\Mvc\Router\Http\TreeRouteStack',
-                            'factory'
+                            'Factory'
                         ),
                     ),
                 ),
