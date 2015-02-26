@@ -9,6 +9,7 @@
 
 namespace Application\Controller;
 
+use Zend\Form\Form;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
@@ -17,9 +18,11 @@ class IndexController extends AbstractActionController
     public function indexAction()
     {
         //$exemploService = $this->getServiceLocator()->get("ExemploService");
+        //$exemploService = $this->getServiceLocator()->get("")
         //print_r($exemploService); die;
         return new ViewModel();
     }
+
 
     public function exemploAction()
     {
@@ -28,3 +31,4 @@ class IndexController extends AbstractActionController
         return new ViewModel(array('xpto'=>nome));
     }
 }
+
