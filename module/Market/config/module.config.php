@@ -10,18 +10,51 @@ return array(
 
     'router' => array(
         'routes' => array(
-            'market' => array(
-                'type' => 'Zend\Mvc\Router\Http\Literal',
-                'options' => array(
-                    'route'    => '/market',
+            'home' => array(
+                'type' => 'Literal',
+                'options'=>array(
+                    'route' => '/',
                     'defaults' => array(
-                        'controller' => 'market-index-controller',
-                        'action'     => 'index',
+                        'controller' =>'market-index-controller',
+                        'action' =>'index'
+                    ),
+                ),
+            ),
+
+            'market' => array(
+                'type' => 'Literal',
+                'options'=>array(
+                    'route' => '/market',
+                    'defaults' => array(
+                        'controller' =>'market-index-controller',
+                        'action' =>'index'
+                    ),
+                ),
+            ),
+
+            'market-post' => array(
+                'type' => 'Literal',
+                'options'=>array(
+                    'route' => '/market/post',
+                    'defaults' => array(
+                        'controller' =>'market-post-controller',
+                        'action' =>'index'
+                    ),
+                ),
+            ),
+
+            'market-view' => array(
+                'type' => 'Literal',
+                'options'=>array(
+                    'route' => '/market/view',
+                    'defaults' => array(
+                        'controller' =>'market-view-controller',
+                        'action' =>'index'
                     ),
                 ),
                 'may_terminate' => true,
                 'child_routes' => array(
-                    'default' => array(
+                    /*'default' => array(
                         'type'    => 'Segment',
                         'options' => array(
                             'route'    => '/[:controller[/:action]]',
@@ -30,6 +63,28 @@ return array(
                                 'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
                             ),
                             'defaults' => array(
+                            ),
+                        ),
+                    ),*/
+                    'index' => array(
+                        'type'    => 'Segment',
+                        'options' => array(
+                            'route'    => '/main[/:category]',
+                            'defaults' => array(
+                                'action' => 'index'
+                            ),
+                        ),
+                    ),
+
+                    'item' => array(
+                        'type'    => 'Segment',
+                        'options' => array(
+                            'route'    => '/item[/:itemId]',
+                            'defaults' => array(
+                                'action' => 'item',
+                            ),
+                            'constraints' =>array(
+                                'itemId' => '[0-9]*',
                             ),
                         ),
                     ),
