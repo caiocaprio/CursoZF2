@@ -10,7 +10,7 @@ return array(
 
     'router' => array(
         'routes' => array(
-            'home' => array(
+            /*'home' => array(
                 'type' => 'Literal',
                 'options'=>array(
                     'route' => '/',
@@ -19,7 +19,7 @@ return array(
                         'action' =>'index'
                     ),
                 ),
-            ),
+            ),*/
 
             'market' => array(
                 'type' => 'Literal',
@@ -107,8 +107,39 @@ return array(
     ),
 
     'view_manager' => array(
+        'display_not_found_reason' => true,
+        'display_exceptions'       => true,
+        'doctype'                  => 'HTML5',
+        'not_found_template'       => 'error/404',
+        'exception_template'       => 'error/index',
+        'template_map' => array(
+            'market/layout'           => __DIR__ . '/../view/layout/layout.phtml',
+            //'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
+            'error/404'               => __DIR__ . '/../view/error/404.phtml',
+            'error/index'             => __DIR__ . '/../view/error/index.phtml',
+        ),
         'template_path_stack' => array(
             __DIR__ . '/../view',
         ),
+
+    ),
+    'layouts' => array(
+
+            'controllers' => array(
+                'market-index-controller' => array(
+                    'actions' => array(
+                        'index' => 'market/layout'
+                    ),
+                    'default' => 'market/layout'
+                )
+            ),
+            'default' => 'market/layout'
+
+    ),
+    'module_layouts' => array(
+        'Market' => array(
+            'default' => 'market/layout',
+            'actionx' => 'asdf'
+        )
     ),
 );

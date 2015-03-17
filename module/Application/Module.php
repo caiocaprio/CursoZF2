@@ -19,9 +19,38 @@ class Module
         $eventManager        = $e->getApplication()->getEventManager();
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
-
-
         $eventManager->attach(MvcEvent::EVENT_DISPATCH, array($this, 'onDispatch'), 100);
+
+       /* $sem = $eventManager->getSharedManager();
+        $sem->attach( 'Zend\Mvc\Controller\AbstractController', 'dispatch', function($e)
+        {
+            $config = $e->getApplication()->getServiceManager()->get('config');
+            $routeMatch = $e->getRouteMatch();
+            $c = explode('\\', $routeMatch->getParam('controller'));
+            $controllerName = array_shift($c);
+            $actionName = strtolower($routeMatch->getParam('action'));
+            $controller = $e->getTarget();
+
+            // Use o layout atribuído à ação
+            if(isset($config['layouts']['controllers'][$controllerName]['actions'][$actionName]))
+            {
+                echo nl2br("possui layout em action ".$config['layouts']['controllers'][$controllerName]['actions'][$actionName]);
+                $controller->layout($config['layouts']['controllers'][$controllerName]['actions'][$actionName]);
+            }
+            // Use o layout padrão controlador
+            elseif(isset($config['layouts']['controllers'][$controllerName]['default']))
+            {
+                echo nl2br("Use o layout padrão do controller ".$config['layouts']['controllers'][$controllerName]['default']);
+                $controller->layout($config['layouts']['controllers'][$controllerName]['default']);
+            }
+            // Use o módulo layout padrão
+            elseif(isset($config['layouts']['default']))
+            {
+                echo nl2br("Use o layout padrão do módulo ".$config['layouts']['default']);
+                $controller->layout($config['layouts']['default']);
+            }
+
+        }, 10);*/
     }
 
     /*
@@ -42,6 +71,10 @@ class Module
         $vm = $e->getViewModel();
 
         $vm->setVariable("categories",$categories);
+
+
+
+
     }
 
     public function getConfig()
