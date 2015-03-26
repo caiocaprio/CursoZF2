@@ -21,13 +21,43 @@ return array(
                 ),
             ),*/
 
+
+
             'market' => array(
                 'type' => 'Literal',
                 'options'=>array(
                     'route' => '/market',
                     'defaults' => array(
-                        'controller' =>'market-index-controller',
+                        'controller' =>'index',
                         'action' =>'index'
+                    ),
+                ),
+                'may_terminate' => true,
+                'child_routes' => array(
+                    'default' => array(
+                        'type'    => 'Segment',
+                        'options' => array(
+                            'route'    => '/[:controller[/:action]]',
+                            'constraints' => array(
+                                'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                                'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
+                            ),
+                            'defaults' => array(
+                                'controller' =>'index',
+                                'action' =>'index'
+                            ),
+                        ),
+                    ),
+                ),
+            ),
+
+            'market-notfound' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route'    => '/market/not-found',
+                    'defaults' => array(
+                        'controller' => 'market-view-controller',
+                        'action'     => 'index',
                     ),
                 ),
             ),
@@ -54,19 +84,8 @@ return array(
                 ),
                 'may_terminate' => true,
                 'child_routes' => array(
-                    /*'default' => array(
-                        'type'    => 'Segment',
-                        'options' => array(
-                            'route'    => '/[:controller[/:action]]',
-                            'constraints' => array(
-                                'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                                'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
-                            ),
-                            'defaults' => array(
-                            ),
-                        ),
-                    ),*/
-                    'index' => array(
+                    /**/
+                    'main' => array(
                         'type'    => 'Segment',
                         'options' => array(
                             'route'    => '/main[/:category]',
@@ -97,6 +116,9 @@ return array(
         'invokables' => array(
             'market-index-controller' => 'Market\Controller\IndexController',
             'market-view-controller' => 'Market\Controller\ViewController',
+            'index' => 'Market\Controller\IndexController',
+            'view' => 'Market\Controller\ViewController',
+            'market-error-controller' => 'Market\Controller\ErrorController',
         ),
         'factories'=>array(
             'market-post-controller' => 'Market\Factory\PostControllerFactory'
@@ -113,33 +135,16 @@ return array(
         'not_found_template'       => 'error/404',
         'exception_template'       => 'error/index',
         'template_map' => array(
-            'market/layout'           => __DIR__ . '/../view/layout/layout.phtml',
-            //'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
-            'error/404'               => __DIR__ . '/../view/error/404.phtml',
-            'error/index'             => __DIR__ . '/../view/error/index.phtml',
+            'market/layout'      => __DIR__ . '/../../market/view/market/layout/layout.phtml',
+            'layout/layout'           => __DIR__ . '/../../market/view/market/layout/layout.phtml',
+            'error/404'               => __DIR__ . '/../../market/view/market/error/404.phtml',
+            'error/index'             => __DIR__ . '/../../market/view/market/error/index.phtml',
+            'default' => 'market/layout',
+
         ),
         'template_path_stack' => array(
             __DIR__ . '/../view',
         ),
 
-    ),
-    'layouts' => array(
-
-            'controllers' => array(
-                'market-index-controller' => array(
-                    'actions' => array(
-                        'index' => 'market/layout'
-                    ),
-                    'default' => 'market/layout'
-                )
-            ),
-            'default' => 'market/layout'
-
-    ),
-    'module_layouts' => array(
-        'Market' => array(
-            'default' => 'market/layout',
-            'actionx' => 'asdf'
-        )
     ),
 );

@@ -9,23 +9,25 @@
 
 namespace Market\Controller;
 
-
 use Base\Controller\BaseController;
+use Zend\Form\Form;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
-class PostController extends BaseController
+class ErrorController extends BaseController
 {
-    public $category;
-
-    public function setCategory($category)
-    {
-        $this->category = $category;
-    }
-
     public function indexAction()
     {
-        return new ViewModel(array('category'=> $this->category));
+        //$exemploService = $this->getServiceLocator()->get("ExemploService");
+        //$exemploService = $this->getServiceLocator()->get("")
+        //print_r($exemploService); die;
+
+        $view = new ViewModel(array(
+            'message' => 'Hello world',
+        ));
+        $view->setTemplate('error/404');
+
+        return $view;
     }
 }
 

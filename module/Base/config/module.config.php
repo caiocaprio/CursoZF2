@@ -2,15 +2,21 @@
 namespace Base;
 
 return array(
-    'layouts' => array(
-        'controllers' => array(
-            'application-index-controller' => array(
-                'actions' => array(
-                    'index' => 'layout/layout'
-                ),
-                'default' => 'layout/layout'
-            )
+    'module_layouts' => array(
+        'Market' => array(
+            'layout'        =>  'market/layout/layout',
+            'layout_error'  =>  'market/error/index',
+            'layout_404'    =>  'market/error/404',
         ),
-        'default' => 'layout/layout'
+        'Application' => array(
+            'layout'        =>  'application/layout/layout',
+            'layout_error'  =>  'application/error/index',
+            'layout_404'    =>  'application/error/404',
+        ),
+        'Default' => array(
+            'layout'        =>  'application/layout/layout',
+            'layout_error'  =>  'application/error/index',
+            'layout_404'    =>  'application/error/404',
+        ),
     ),
 );

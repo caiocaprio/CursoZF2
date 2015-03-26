@@ -17,103 +17,64 @@ class Module
 
     public function onBootstrap(MvcEvent $e)
     {
-        //$this->setLayoutBetoAp($e);
-        $this->setLayoutCaprio($e);
-    }
-
-    private  function setLayoutCaprio(MvcEvent $e)
-    {
-        /*$app = $e->getApplication();
-        $acl = $app->getServiceManager()->get('ACL'); // get your ACL here
-
-        if (!$acl->isAllowed()) {
-            $em = $app->getEventManager();
-            $em->attach(MvcEvent::EVENT_DISPATCH, function($e) {
-                $routeMatch = $e->getRouteMatch();
-
-                $routeMatch->setParam('controller', 'my-403-controller');
-                $routeMatch->setParam('action', 'my-403-action');
-            }, 1000);
-        }*/
-
-
         $app = $e->getApplication();
         $em = $app->getEventManager();
         $sm = $em->getSharedManager();
-        $acl = $app->getServiceManager()->get('ACL'); // get your ACL here
 
-        if (!$acl->isAllowed()) {
-            $em->attach(MvcEvent::EVENT_DISPATCH, function($e) {
+        $em->attach(MvcEvent::EVENT_DISPATCH, array($this, 'onDispatch'));
+        $em->attach(MvcEvent::EVENT_DISPATCH_ERROR, array($this, 'onDispatchError'));
 
-                $routeMatch = $e->getRouteMatch();
-                var_dump($routeMatch);
-                exit;
-                //$routeMatch->setParam('controller', 'my-403-controller');
-                //$routeMatch->setParam('action', 'my-403-action');
-            }, 1000);
-        }
-
-
-
-        $sm->attach('Zend\Mvc\Controller\AbstractController', MvcEvent::EVENT_DISPATCH, function($e)
-        {
-
-            $config = $e->getApplication()->getServiceManager()->get('config');
-            $routeMatch = $e->getRouteMatch();
-            $controllerName = strtolower($routeMatch->getParam('controller'));
-            $actionName = strtolower($routeMatch->getParam('action'));
-            $routerName = $routeMatch->getMatchedRouteName();
-
-            $controller = $e->getTarget();
-
-            echo "<pre>";
-            var_dump($controllerName);
-            var_dump($actionName);
-            var_dump($routeMatch->getMatchedRouteName());
-            exit;
-
-            // Use o layout atribuído à ação
-            if(isset($config['layouts']['controllers'][$controllerName]['actions'][$actionName]))
-            {
-                echo nl2br("possui layout em action ".$config['layouts']['controllers'][$controllerName]['actions'][$actionName]);
-                $controller->layout($config['layouts']['controllers'][$controllerName]['actions'][$actionName]);
-            }
-            // Use o layout padrão controlador
-            elseif(isset($config['layouts']['controllers'][$controllerName]['default']))
-            {
-                echo nl2br("Use o layout padrão do controller ".$config['layouts']['controllers'][$controllerName]['default']);
-                $controller->layout($config['layouts']['controllers'][$controllerName]['default']);
-            }
-            // Use o módulo layout padrão
-            elseif(isset($config['layouts']['default']))
-            {
-                echo nl2br("Use o layout padrão do módulo ".$config['layouts']['default']);
-                $controller->layout($config['layouts']['default']);
-            }else{
-                echo nl2br("Não Existe ".$config['layouts']['default']);
-                $controller->layout($config['layouts']['default']);
-            }
-
-        }, 10);
+        $sm->attach('Zend\Mvc\Controller\AbstractController', MvcEvent::EVENT_DISPATCH,  array($this, 'onDispatchShared'), 100);
     }
 
-    private function setLayoutBetoAp(MvcEvent $e){
+    public function onDispatchShared(MvcEvent $e)
+    {
+        $this->setLayoutDefault($e);
+    }
 
-        $e->getApplication()->getEventManager()->getSharedManager()->attach('Zend\Mvc\Controller\AbstractActionController', 'dispatch', function($e) {
-            echo "ae";
-            exit;
-            $controller      = $e->getTarget();
-            $controllerClass = get_class($controller);
-            $moduleNamespace = substr($controllerClass, 0, strpos($controllerClass, '\\'));
-            $config          = $e->getApplication()->getServiceManager()->get('config');
-            $routeMatch      = $e->getRouteMatch();
-            $actionName      = strtolower($routeMatch->getParam('action', 'not-found'));
-            if (isset($config['module_layouts'][$moduleNamespace][$actionName])) {
-                $controller->layout($config['module_layouts'][$moduleNamespace][$actionName]);
-            }elseif(isset($config['module_layouts'][$moduleNamespace]['default'])) {
-                $controller->layout($config['module_layouts'][$moduleNamespace]['default']);
-            }
-        }, 100);
+    public function onDispatch(MvcEvent $e)
+    {
+        $sm = $e->getApplication()->getServiceManager();
+        $categories = $sm->get("categories");
+        $vm = $e->getViewModel();
+        $vm->setVariable("categories",$categories);
+    }
+
+    public function onDispatchError(MvcEvent $e)
+    {
+        /*
+     *  $serviceManager = $e->getApplication()->getServiceManager();
+        $layout = $serviceManager->get( 'viewManager' )->getViewModel();
+ */
+        $moduleName = ($e->getRouteMatch() ? explode('-',explode('/',$e->getRouteMatch()->getMatchedRouteName())[0])[0] : 'application');
+        $config = $e->getApplication()->getServiceManager()->get('config');
+
+        $template =  $config['module_layouts'][ucfirst($moduleName)]['layout_error'];
+        if($e->getResponse()->getStatusCode() == 404)
+        {
+            $template =  $config['module_layouts'][ucfirst($moduleName)]['layout_404'];
+        }
+
+        //$layout->setTemplate($template);
+
+       // $viewModel = $e->getViewModel();
+        //$viewModel->setTemplate( $template );
+
+    }
+
+
+    public function setLayoutDefault(MvcEvent $e)
+    {
+        $controller      = $e->getTarget();
+        $controllerClass = get_class($controller);
+        $moduleNamespace = substr($controllerClass, 0, strpos($controllerClass, '\\'));
+        $config          = $e->getApplication()->getServiceManager()->get('config');
+
+        if (isset($config['module_layouts'][$moduleNamespace])) {
+            $controller->layout($config['module_layouts'][$moduleNamespace]['layout']);
+        }else{
+            $controller->layout($config['module_layouts']['Default']['layout']);
+        }
     }
 
 
@@ -132,4 +93,19 @@ class Module
             ),
         );
     }
+
+    /*public function getServiceConfig()
+    {
+        return array(
+            'factories' => array(
+                'Logger' => function ($sm) {
+                    $filename = 'log_' . date('Y-m-d') . '.txt';
+                    $log = new Logger();
+                    $writer = new Stream('./data/logs/' . $filename);
+                    $log->addWriter($writer);
+                    return $log;
+                },
+            ),
+        );
+    }*/
 }

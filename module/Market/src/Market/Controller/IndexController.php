@@ -10,20 +10,21 @@ namespace Market\Controller;
 
 
 use Base\Controller\BaseController;
-use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
 class IndexController extends BaseController
 {
     public function indexAction()
     {
-        $messages = array();
+
+        /*$messages = array();
         if($this->flashMessenger()->hasMessages())
         {
             $messages = $this->flashMessenger()->getMessages();
         }
 
-      return new ViewModel(array('messages'=>$messages));
+        return new ViewModel(array('messages'=>$messages));*/
+        return new ViewModel();
     }
 
     public function fooAction()

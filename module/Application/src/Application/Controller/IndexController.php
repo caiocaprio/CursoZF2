@@ -24,7 +24,6 @@ class IndexController extends BaseController
         return new ViewModel();
     }
 
-
     public function exemploAction()
     {
         $nome = "Zend Framework 2";

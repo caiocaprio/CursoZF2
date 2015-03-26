@@ -24,7 +24,7 @@ return array(
             // new controllers and actions without needing to create a new
             // module. Simply drop new controllers in, and you can access them
             // using the path /application/:controller/:action
-            'application' => array(
+            'application/application' => array(
                 'type'    => 'Literal',
                 'options' => array(
                     'route'    => '/application',
@@ -34,7 +34,7 @@ return array(
                     ),
                 ),
                 'may_terminate' => true,
-                'child_routes' => array(
+                /*'child_routes' => array(
                     'default' => array(
                         'type'    => 'Segment',
                         'options' => array(
@@ -46,6 +46,26 @@ return array(
                             'defaults' => array(
                             ),
                         ),
+                    ),
+                ),*/
+            ),
+            'application-notfound' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/application/not-found',
+                    'defaults' => array(
+                        'controller' => 'application-error-controller',
+                        'action'     => 'index',
+                    ),
+                ),
+            ),
+            'application-teste' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/application/teste',
+                    'defaults' => array(
+                        'controller' => 'application-index-controller',
+                        'action'     => 'index',
                     ),
                 ),
             ),
@@ -84,7 +104,8 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'application-index-controller' => 'Application\Controller\IndexController'
+            'application-index-controller' => 'Application\Controller\IndexController',
+            'application-error-controller' => 'Application\Controller\ErrorController'
         ),
     ),
     'view_manager' => array(
@@ -94,10 +115,12 @@ return array(
         'not_found_template'       => 'error/404',
         'exception_template'       => 'error/index',
         'template_map' => array(
-            'application/layout'           => __DIR__ . '/../view/layout/layout.phtml',
-            'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
-            'error/404'               => __DIR__ . '/../view/error/404.phtml',
-            'error/index'             => __DIR__ . '/../view/error/index.phtml',
+          /*  'application/application' => __DIR__ . '/../../application/layout/layout.phtml',*/
+            'application/layout'      => __DIR__ . '/../../application/view/application/layout/layout.phtml',
+            'layout/layout'           => __DIR__ . '/../../application/view/application/layout/layout.phtml',
+            'error/404'               => __DIR__ . '/../../application/view/application/error/404.phtml',
+            'error/index'             => __DIR__ . '/../../application/view/application/error/index.phtml',
+            'default' => 'application/layout',
         ),
         'template_path_stack' => array(
             __DIR__ . '/../view',
@@ -111,21 +134,4 @@ return array(
         ),
     ),
 
-    'layouts' => array(
-        'controllers' => array(
-            'application-index-controller' => array(
-                'actions' => array(
-                    'index' => 'application/layout'
-                ),
-                'default' => 'application/layout'
-            )
-        ),
-        'default' => 'application/layout'
-    ),
-
-    'module_layouts' => array(
-        'Application' => array(
-            'default' => 'application/layout',
-        )
-    ),
 );
