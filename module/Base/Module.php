@@ -57,8 +57,8 @@ class Module
 
         //$layout->setTemplate($template);
 
-       // $viewModel = $e->getViewModel();
-        //$viewModel->setTemplate( $template );
+        $viewModel = $e->getViewModel();
+        $viewModel->setTemplate( $template );
 
     }
 

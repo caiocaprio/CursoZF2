@@ -25,7 +25,10 @@ class PostController extends BaseController
 
     public function indexAction()
     {
-        return new ViewModel(array('category'=> $this->category));
+        $viewModel = new ViewModel(array('category'=> $this->category));
+        $viewModel->setTemplate('market/post/invalid.phtml');
+        return $viewModel;
+        //return new ViewModel(array('category'=> $this->category));
     }
 }
 

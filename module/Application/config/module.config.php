@@ -105,7 +105,7 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'application-index-controller' => 'Application\Controller\IndexController',
-            'application-error-controller' => 'Application\Controller\ErrorController'
+            'application-error-controller' => 'Application\Controller\ErrorController',
         ),
     ),
     'view_manager' => array(
@@ -119,11 +119,16 @@ return array(
             'application/layout'      => __DIR__ . '/../../application/view/application/layout/layout.phtml',
             'layout/layout'           => __DIR__ . '/../../application/view/application/layout/layout.phtml',
             'error/404'               => __DIR__ . '/../../application/view/application/error/404.phtml',
-            'error/index'             => __DIR__ . '/../../application/view/application/error/index.phtml',
+            'error/index'             => __DIR__ . '/../../application/view/application/error/invalid.phtml',
             'default' => 'application/layout',
         ),
         'template_path_stack' => array(
             __DIR__ . '/../view',
+        ),
+    ),
+    'view_helpers'=>array(
+        'invokables'=>array(
+            'leftLinks'=>'Application\Helper\LeftLinks'
         ),
     ),
     // Placeholder for console routes

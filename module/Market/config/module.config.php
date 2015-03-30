@@ -138,7 +138,7 @@ return array(
             'market/layout'      => __DIR__ . '/../../market/view/market/layout/layout.phtml',
             'layout/layout'           => __DIR__ . '/../../market/view/market/layout/layout.phtml',
             'error/404'               => __DIR__ . '/../../market/view/market/error/404.phtml',
-            'error/index'             => __DIR__ . '/../../market/view/market/error/index.phtml',
+            'error/index'             => __DIR__ . '/../../market/view/market/error/invalid.phtml',
             'default' => 'market/layout',
 
         ),
