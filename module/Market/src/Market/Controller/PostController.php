@@ -11,11 +11,11 @@ namespace Market\Controller;
 
 
 use Base\Controller\BaseController;
-use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
 class PostController extends BaseController
 {
+   // use ListingsTableTrait;
     public $category;
 
     public function setCategory($category)

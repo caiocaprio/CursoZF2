@@ -37,7 +37,7 @@ return array(
                     'default' => array(
                         'type'    => 'Segment',
                         'options' => array(
-                            'route'    => '/[:controller[/:action]]',
+                            'route'    => '/[:controller[/:action]][/]',
                             'constraints' => array(
                                 'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
                                 'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
@@ -60,6 +60,19 @@ return array(
                         'action'     => 'index',
                     ),
                 ),
+                'may_terminate' => true,
+                'child_routes' => array(
+                    'default' => array(
+                        'type'    => 'Segment',
+                        'options' => array(
+                            'route'    => '[/]',
+                            'defaults' => array(
+                                'controller' =>'market-view-controller',
+                                'action' =>'index'
+                            ),
+                        ),
+                    ),
+                ),
             ),
 
             'market-post' => array(
@@ -71,6 +84,20 @@ return array(
                         'action' =>'index'
                     ),
                 ),
+                'may_terminate' => true,
+                'child_routes' => array(
+                    'default' => array(
+                        'type'    => 'Segment',
+                        'options' => array(
+                            'route'    => '[/]',
+                            'defaults' => array(
+                                'controller' =>'market-post-controller',
+                                'action' =>'index'
+                            ),
+                        ),
+                    ),
+                ),
+
             ),
 
             'market-view' => array(
@@ -85,12 +112,34 @@ return array(
                 'may_terminate' => true,
                 'child_routes' => array(
                     /**/
+                    'default' => array(
+                        'type'    => 'Segment',
+                        'options' => array(
+                            'route'    => '[/]',
+                            'defaults' => array(
+                                'action' => 'index'
+                            ),
+                        ),
+                    ),
+
                     'main' => array(
                         'type'    => 'Segment',
                         'options' => array(
                             'route'    => '/main[/:category]',
                             'defaults' => array(
                                 'action' => 'index'
+                            ),
+                        ),
+                        'may_terminate' => true,
+                        'child_routes' => array(
+                            'default' => array(
+                                'type'    => 'Segment',
+                                'options' => array(
+                                    'route'    => '[/]',
+                                    'defaults' => array(
+                                        'action' => 'index'
+                                    ),
+                                ),
                             ),
                         ),
                     ),
@@ -104,6 +153,18 @@ return array(
                             ),
                             'constraints' =>array(
                                 'itemId' => '[0-9]*',
+                            ),
+                        ),
+                        'may_terminate' => true,
+                        'child_routes' => array(
+                            'default' => array(
+                                'type'    => 'Segment',
+                                'options' => array(
+                                    'route'    => '[/]',
+                                    'defaults' => array(
+                                        'action' => 'item'
+                                    ),
+                                ),
                             ),
                         ),
                     ),
@@ -126,6 +187,15 @@ return array(
         'aliases'=>array(
             'alt'=>'market-view-controller'
         ),
+    ),
+
+    'service_manager'=>array(
+        'factories' =>array(
+            'general-adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
+            'market-post-form' => 'Market\Factory\PostFormFactory',
+            'market-post-filter' => 'Market\Factory\PostFilterFactory',
+            'listings-table' => 'Market\Factory\ListingsTableFactory'
+        )
     ),
 
     'view_manager' => array(

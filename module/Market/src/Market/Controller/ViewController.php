@@ -16,6 +16,8 @@ use Zend\View\Model\ViewModel;
 
 class ViewController extends BaseController
 {
+    //use ListingsTableTrait;
+
     public function indexAction()
     {
         //$category = $this->params()->fromQuery("category");

@@ -14,6 +14,8 @@ use Zend\View\Model\ViewModel;
 
 class IndexController extends BaseController
 {
+    //use ListingsTableTrait;
+
     public function indexAction()
     {
 
@@ -24,7 +26,7 @@ class IndexController extends BaseController
         }
 
         return new ViewModel(array('messages'=>$messages));
-        return new ViewModel();
+        //return new ViewModel();
     }
 
     public function fooAction()
