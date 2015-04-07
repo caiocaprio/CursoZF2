@@ -141,6 +141,8 @@ class Module
                 __DIR__.'/autoload_classmap.php',
             ),
 
+            ///Com esse código abaixo comentado, é necessario gerar o autoload_classmap.php
+            ///exemplo: diretorio-do-modulo php D:\Caio\CursoZendFramework2\desenvolvimento\CursoZF2\vendor\zendframework\zendframework\bin\classmap_generator.php
             /*'Zend\Loader\StandardAutoloader' => array(
                 'namespaces' => array(
                     __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,

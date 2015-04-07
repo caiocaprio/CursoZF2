@@ -22,17 +22,17 @@ class PostFormFactory implements FactoryInterface
         //$allServices = $sm->getServiceLocator();
         //$sm = $allServices->get('ServiceManager');
 
-        //$categories = $sm->get('categories');
+        $categories = $sm->get('categories');
 
         /*$postController = new \Market\Controller\PostController();
         $postController->setCategory($categories);
 
         $postController->setPostForm($sm->get('market-post-form'));*/
 
-       // $form = new PostForm();
-       // $form->setCategories($categories);
-       // $form->buildForm();
+        $form = new PostForm();
+        $form->setCategories($categories);
+        $form->buildForm();
 
-       // return $form;
+        return $form;
 	}
 }

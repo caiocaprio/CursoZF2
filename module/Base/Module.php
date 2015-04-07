@@ -9,6 +9,7 @@
 
 namespace Base;
 
+use Zend\Http\Request;
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
 
@@ -37,8 +38,15 @@ class Module
         $sm = $e->getApplication()->getServiceManager();
         $categories = $sm->get("categories");
         $vm = $e->getViewModel();
+
         $vm->setVariable("categories",$categories);
+
+        $route = $e->getRouteMatch();
+        $routeName = $e->getRouteMatch()->getMatchedRouteName();
+        $vm->setVariable("routeMatch",$route);
+        $vm->setVariable("routeName",$routeName);
     }
+
 
     public function onDispatchError(MvcEvent $e)
     {

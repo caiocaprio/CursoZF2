@@ -11,5 +11,12 @@ namespace Base\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 
-class BaseController extends AbstractActionController{}
+class BaseController extends AbstractActionController{
+
+    public function __construct()
+    {
+        //$this->teste = 0;
+    }
+
+}
 
