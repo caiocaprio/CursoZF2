@@ -177,12 +177,14 @@ return array(
         'invokables' => array(
             'market-index-controller' => 'Market\Controller\IndexController',
             'market-view-controller' => 'Market\Controller\ViewController',
+           // 'market-post-controller' => 'Market\Controller\PostController',
             'index' => 'Market\Controller\IndexController',
             'view' => 'Market\Controller\ViewController',
             'market-error-controller' => 'Market\Controller\ErrorController',
         ),
         'factories'=>array(
-            'market-post-controller' => 'Market\Factory\PostControllerFactory'
+            'market-post-controller' => 'Market\Factory\PostControllerFactory',
+
         ),
         'aliases'=>array(
             'alt'=>'market-view-controller'
@@ -191,10 +193,10 @@ return array(
 
     'service_manager'=>array(
         'factories' =>array(
-            'general-adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
+            //'general-adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
             'market-post-form' => 'Market\Factory\PostFormFactory',
-            'market-post-filter' => 'Market\Factory\PostFilterFactory',
-            'listings-table' => 'Market\Factory\ListingsTableFactory'
+           // 'market-post-filter' => 'Market\Factory\PostFilterFactory',
+           // 'listings-table' => 'Market\Factory\ListingsTableFactory',
         )
     ),
 

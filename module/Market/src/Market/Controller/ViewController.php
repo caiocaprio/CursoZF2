@@ -23,6 +23,11 @@ class ViewController extends BaseController
         //$category = $this->params()->fromQuery("category");
         $category = $this->params()->fromRoute("category");
 
+        //add css via controller
+        /*$sm = $this->getEvent()->getApplication()->getServiceManager();
+        $helper = $sm->get('viewhelpermanager')->get('headLink');
+        $helper->prependStylesheet('/css/mystylesheet.css');*/
+
         return new ViewModel(array('category'=>$category));
     }
 

@@ -25,7 +25,8 @@ class IndexController extends BaseController
             $messages = $this->flashMessenger()->getMessages();
         }
 
-        return new ViewModel(array('messages'=>$messages));
+       // return new ViewModel(array('messages'=>$messages));
+        return array('messages'=>$messages);
         //return new ViewModel();
     }
 

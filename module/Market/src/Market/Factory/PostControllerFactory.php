@@ -18,6 +18,27 @@ class PostControllerFactory implements FactoryInterface
         $postController = new \Market\Controller\PostController();
         $postController->setCategory($categories);
 
+
+
+        try {
+            // ...
+            $factoryPostForm = $sm->get('market-post-form');
+            // ...
+        } catch (\Exception $e) {
+            do {
+                var_dump($e->getMessage());
+            } while ($e = $e->getPrevious());
+        }
+
+
+       // echo "<pre>";
+       // var_dump($factoryPostForm);
+        exit;
+        //$postController->setPostForm($sm->get('market-post-form'));
+
+
+       // $postController->setPostForm($sm->get('market-post-form'));
+
         return $postController;
     }
 }

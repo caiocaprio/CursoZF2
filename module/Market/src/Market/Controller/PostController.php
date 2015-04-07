@@ -18,6 +18,13 @@ class PostController extends BaseController
    // use ListingsTableTrait;
     public $category;
 
+    private $postForm;
+
+    public function setPostForm($postForm)
+    {
+        $this->postForm = $postForm;
+    }
+
     public function setCategory($category)
     {
         $this->category = $category;
@@ -25,10 +32,14 @@ class PostController extends BaseController
 
     public function indexAction()
     {
+
+        /*$data = $this->params()->fromPost();
+        $this->postForm->setData($data);
+        $viewModel = new ViewModel(array('postForm'=> $this->postForm));*/
+
         $viewModel = new ViewModel(array('category'=> $this->category));
         $viewModel->setTemplate('market/post/invalid.phtml');
         return $viewModel;
-        //return new ViewModel(array('category'=> $this->category));
     }
 }
 
