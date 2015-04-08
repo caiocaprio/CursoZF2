@@ -57,7 +57,8 @@ class PostForm extends Form
 			  ->setAttributes(array('size' => 60, 
 			                        'maxLength' => 128,
 			                        'required' => 'required',
-			                        'placeholder' => 'Listing header'));
+			                        'placeholder' => 'Digite o título',
+                                    'class'=>'teste'));
 		
         /*
         $photo = new Element\Text('photo_filename');

@@ -194,6 +194,7 @@ return array(
         'factories' =>array(
             //'general-adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
             'market-post-form' => 'Market\Factory\PostFormFactory',
+            'market-post-filter' => 'Market\Factory\PostFilterFactory',
            // 'market-post-filter' => 'Market\Factory\PostFilterFactory',
            // 'listings-table' => 'Market\Factory\ListingsTableFactory',
         )

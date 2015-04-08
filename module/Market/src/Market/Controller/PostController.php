@@ -34,8 +34,25 @@ class PostController extends BaseController
     {
 
         $data = $this->params()->fromPost();
-        $this->postForm->setData($data);
         $viewModel = new ViewModel(array('postForm'=> $this->postForm, 'data' => $data));
+        $viewModel->setTemplate('market/post/index.phtml');
+
+        if($this->getRequest()->isPost())
+        {
+            $this->postForm->setData($data);
+            if($this->postForm->isValid())
+            {
+                $this->flashMessenger()->addMessage('Sucesso no Post!');
+                $this->redirect()->toRoute('market');
+            }else{
+                $invalidView = new ViewModel();
+                $invalidView->setTemplate('market/post/invalid.phtml');
+                $invalidView->addChild($viewModel, 'main');
+                return $invalidView;
+            }
+        }
+
+
 
        /* $viewModel = new ViewModel(array('category'=> $this->category));
         $viewModel->setTemplate('market/post/invalid.phtml');*/

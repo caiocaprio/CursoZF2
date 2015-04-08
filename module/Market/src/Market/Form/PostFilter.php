@@ -9,8 +9,26 @@ use Market\Form\Filter\Float;
 class PostFilter extends InputFilter
 {
 
-	use CategoryTrait;
-	use ExpireDaysTrait;
+	//use CategoryTrait;
+	//use ExpireDaysTrait;
+
+    private $categories;
+
+    /**
+     * @return mixed
+     */
+    public function getCategories()
+    {
+        return $this->categories;
+    }
+
+    /**
+     * @param mixed $category
+     */
+    public function setCategories($categories)
+    {
+        $this->categories = $categories;
+    }
 	
 	public function buildFilter()
 	{
@@ -33,11 +51,11 @@ class PostFilter extends InputFilter
 					->attachByName('StringTrim')
 					->attachByName('StripTags');
 		$titleRegex = new Regex(array('pattern' => '/^[a-zA-Z0-9 ]*$/'));
-		$titleRegex->setMessage('Title should only contain numbers, letters or spaces!');
+		$titleRegex->setMessage('O Título deve conter letras, números e espaço.');
 		$title->getValidatorChain()
 			  ->attach($titleRegex)
 			  ->attachByName('StringLength', array('min' => 1, 'max' => 128));
-
+        /*
 		$photo = new Input('photo_filename');
 		$photo->getFilterChain()
 				 ->attachByName('StripTags')
@@ -105,10 +123,10 @@ class PostFilter extends InputFilter
 		$delCode->setRequired(TRUE);
 		$delCode->getValidatorChain()
 			    ->addByName('Digits');
-
+*/
 		$this->add($category)
 			 ->add($title)
-			 ->add($photo)
+			/* ->add($photo)
 			 ->add($price)
 			 ->add($expires)
 			 ->add($city)
@@ -116,6 +134,7 @@ class PostFilter extends InputFilter
 			 ->add($phone)
 			 ->add($email)
 			 ->add($description)
-		     ->add($delCode);
+		     ->add($delCode)*/
+        ;
 	}
 }

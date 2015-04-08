@@ -1,0 +1,24 @@
+form label
+{
+    display: block;
+    margin: 10px 0px;
+}
+
+form label span
+{
+    width: 100px;
+    overflow: hidden;
+    float: left;
+    clear: both;
+    line-height: 1.5em;
+}
+
+form input[type="submit"]
+{
+    margin: 30px auto;
+
+    display: block;
+    overflow: hidden;
+    clear: both;
+    width: 100px;
+}
