@@ -28,7 +28,7 @@ return array(
                 'options'=>array(
                     'route' => '/market',
                     'defaults' => array(
-                        'controller' =>'index',
+                        'controller' =>'market-index-controller',
                         'action' =>'index'
                     ),
                 ),
@@ -43,7 +43,7 @@ return array(
                                 'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
                             ),
                             'defaults' => array(
-                                'controller' =>'index',
+                                'controller' =>'market-index-controller',
                                 'action' =>'index'
                             ),
                         ),
@@ -175,15 +175,16 @@ return array(
 
     'controllers' => array(
         'invokables' => array(
-            'market-index-controller' => 'Market\Controller\IndexController',
-            'market-view-controller' => 'Market\Controller\ViewController',
+
            // 'market-post-controller' => 'Market\Controller\PostController',
-            'index' => 'Market\Controller\IndexController',
-            'view' => 'Market\Controller\ViewController',
+            //'index' => 'Market\Controller\IndexController',
+            //'view' => 'Market\Controller\ViewController',
             'market-error-controller' => 'Market\Controller\ErrorController',
         ),
         'factories'=>array(
             'market-post-controller' => 'Market\Factory\PostControllerFactory',
+            'market-index-controller' => 'Market\Factory\IndexControllerFactory',
+            'market-view-controller' => 'Market\Factory\ViewControllerFactory',
         ),
         'aliases'=>array(
             'alt'=>'market-view-controller'
@@ -192,11 +193,10 @@ return array(
 
     'service_manager'=>array(
         'factories' =>array(
-            //'general-adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
+            'general-adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
             'market-post-form' => 'Market\Factory\PostFormFactory',
             'market-post-filter' => 'Market\Factory\PostFilterFactory',
-           // 'market-post-filter' => 'Market\Factory\PostFilterFactory',
-           // 'listings-table' => 'Market\Factory\ListingsTableFactory',
+            'listings-table' => 'Market\Factory\ListingsTableFactory',
         )
     ),
 
@@ -210,7 +210,7 @@ return array(
             'market/layout'      => __DIR__ . '/../../market/view/market/layout/layout.phtml',
             'layout/layout'           => __DIR__ . '/../../market/view/market/layout/layout.phtml',
             'error/404'               => __DIR__ . '/../../market/view/market/error/404.phtml',
-            'error/index'             => __DIR__ . '/../../market/view/market/error/invalid.phtml',
+            'error/index'             => __DIR__ . '/../../market/view/market/error/index.phtml',
             'default' => 'market/layout',
 
         ),

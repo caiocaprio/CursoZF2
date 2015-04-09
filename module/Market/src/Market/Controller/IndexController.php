@@ -14,7 +14,13 @@ use Zend\View\Model\ViewModel;
 
 class IndexController extends BaseController
 {
-    //use ListingsTableTrait;
+    use ListingsTableTrait;
+    public $category;
+
+    public function setCategory($category)
+    {
+        $this->category = $category;
+    }
 
     public function indexAction()
     {

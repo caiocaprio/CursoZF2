@@ -7,7 +7,7 @@ return array(
         'Market',
         'Base',
         ///'Search',
-       // 'ZendDeveloperTools',
+        'ZendDeveloperTools',
     ),
 
 

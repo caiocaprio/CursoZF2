@@ -54,19 +54,22 @@ class Module
      *  $serviceManager = $e->getApplication()->getServiceManager();
         $layout = $serviceManager->get( 'viewManager' )->getViewModel();
  */
+        $sm = $e->getApplication()->getServiceManager();
+        $categories = $sm->get("categories");
+        $vm = $e->getViewModel();
+        $vm->setVariable("categories",$categories);
+
         $moduleName = ($e->getRouteMatch() ? explode('-',explode('/',$e->getRouteMatch()->getMatchedRouteName())[0])[0] : 'application');
         $config = $e->getApplication()->getServiceManager()->get('config');
 
-        $template =  $config['module_layouts'][ucfirst($moduleName)]['layout_error'];
+        $templateError =  $config['module_layouts'][ucfirst($moduleName)]['error-index'];
         if($e->getResponse()->getStatusCode() == 404)
         {
-            $template =  $config['module_layouts'][ucfirst($moduleName)]['layout_404'];
+            $templateError =  $config['module_layouts'][ucfirst($moduleName)]['error-index'];
         }
 
-        //$layout->setTemplate($template);
+        $vm->setTemplate($config['module_layouts'][ucfirst($moduleName)]['layout']);
 
-        $viewModel = $e->getViewModel();
-        $viewModel->setTemplate( $template );
 
     }
 

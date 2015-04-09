@@ -15,7 +15,7 @@ use Zend\View\Model\ViewModel;
 
 class PostController extends BaseController
 {
-   // use ListingsTableTrait;
+    use ListingsTableTrait;
     public $category;
 
     private $postForm;
