@@ -15,13 +15,6 @@ use Zend\View\Model\ViewModel;
 class IndexController extends BaseController
 {
     use ListingsTableTrait;
-    public $category;
-
-    public function setCategory($category)
-    {
-        $this->category = $category;
-    }
-
     public function indexAction()
     {
 
@@ -31,8 +24,10 @@ class IndexController extends BaseController
             $messages = $this->flashMessenger()->getMessages();
         }
 
+        $itemRecent = $this->listingsTable->getLastestListing();
+
        // return new ViewModel(array('messages'=>$messages));
-        return array('messages'=>$messages);
+        return array('messages'=>$messages, 'item'=>$itemRecent);
         //return new ViewModel();
     }
 

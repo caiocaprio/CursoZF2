@@ -9,8 +9,8 @@ use Market\Form\Filter\Float;
 class PostFilter extends InputFilter
 {
 
-	//use CategoryTrait;
-	//use ExpireDaysTrait;
+	use CategoryTrait;
+	use ExpireDaysTrait;
 
     private $categories;
 
@@ -55,7 +55,7 @@ class PostFilter extends InputFilter
 		$title->getValidatorChain()
 			  ->attach($titleRegex)
 			  ->attachByName('StringLength', array('min' => 1, 'max' => 128));
-        /*
+
 		$photo = new Input('photo_filename');
 		$photo->getFilterChain()
 				 ->attachByName('StripTags')
@@ -123,10 +123,10 @@ class PostFilter extends InputFilter
 		$delCode->setRequired(TRUE);
 		$delCode->getValidatorChain()
 			    ->addByName('Digits');
-*/
+
 		$this->add($category)
 			 ->add($title)
-			/* ->add($photo)
+			 ->add($photo)
 			 ->add($price)
 			 ->add($expires)
 			 ->add($city)
@@ -134,7 +134,7 @@ class PostFilter extends InputFilter
 			 ->add($phone)
 			 ->add($email)
 			 ->add($description)
-		     ->add($delCode)*/
+		     ->add($delCode)
         ;
 	}
 }

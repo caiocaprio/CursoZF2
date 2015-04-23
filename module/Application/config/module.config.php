@@ -78,7 +78,7 @@ return array(
                 'beauty',
                 'clothing',
                 'computer',
-                'entretainment',
+                'entertainment',
                 'free',
                 'garden',
                 'general'

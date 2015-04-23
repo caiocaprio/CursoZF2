@@ -39,9 +39,13 @@ class PostController extends BaseController
 
         if($this->getRequest()->isPost())
         {
+
             $this->postForm->setData($data);
             if($this->postForm->isValid())
             {
+                echo var_dump($this->postForm->getValues());
+                exit;
+                $this->listingsTable->addPosting($this->postForm->getValue());
                 $this->flashMessenger()->addMessage('Sucesso no Post!');
                 $this->redirect()->toRoute('market');
             }else{
