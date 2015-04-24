@@ -11,12 +11,14 @@ namespace Market\Controller;
 
 
 use Base\Controller\BaseController;
+use Market\Form\CategoryTrait;
 use Zend\View\Model\ViewModel;
 
 class PostController extends BaseController
 {
     use ListingsTableTrait;
-    public $category;
+    use CategoryTrait;
+
 
     private $postForm;
 
@@ -25,15 +27,12 @@ class PostController extends BaseController
         $this->postForm = $postForm;
     }
 
-    public function setCategory($category)
-    {
-        $this->category = $category;
-    }
-
     public function indexAction()
     {
 
         $data = $this->params()->fromPost();
+
+
         $viewModel = new ViewModel(array('postForm'=> $this->postForm, 'data' => $data));
         $viewModel->setTemplate('market/post/index.phtml');
 
@@ -43,9 +42,7 @@ class PostController extends BaseController
             $this->postForm->setData($data);
             if($this->postForm->isValid())
             {
-                echo var_dump($this->postForm->getValues());
-                exit;
-                $this->listingsTable->addPosting($this->postForm->getValue());
+                $this->listingsTable->addPosting($this->postForm->getData());
                 $this->flashMessenger()->addMessage('Sucesso no Post!');
                 $this->redirect()->toRoute('market');
             }else{

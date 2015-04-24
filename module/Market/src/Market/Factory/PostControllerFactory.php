@@ -13,10 +13,8 @@ class PostControllerFactory implements FactoryInterface
         $allServices = $controllerManager->getServiceLocator();
         $sm = $allServices->get('ServiceManager');
 
-        $categories = $sm->get('categories');
-
         $postController = new \Market\Controller\PostController();
-        $postController->setCategory($categories);
+        $postController->setCategories($sm->get('categories'));
         $postController->setPostForm($sm->get('market-post-form'));
         $postController->setListingsTable($sm->get('listings-table'));
 

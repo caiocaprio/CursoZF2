@@ -12,23 +12,7 @@ class PostFilter extends InputFilter
 	use CategoryTrait;
 	use ExpireDaysTrait;
 
-    private $categories;
 
-    /**
-     * @return mixed
-     */
-    public function getCategories()
-    {
-        return $this->categories;
-    }
-
-    /**
-     * @param mixed $category
-     */
-    public function setCategories($categories)
-    {
-        $this->categories = $categories;
-    }
 	
 	public function buildFilter()
 	{
@@ -56,7 +40,7 @@ class PostFilter extends InputFilter
 			  ->attach($titleRegex)
 			  ->attachByName('StringLength', array('min' => 1, 'max' => 128));
 
-		$photo = new Input('photo_filename');
+		/*$photo = new Input('photo_filename');
 		$photo->getFilterChain()
 				 ->attachByName('StripTags')
 				 ->attachByName('StringTrim');
@@ -123,10 +107,10 @@ class PostFilter extends InputFilter
 		$delCode->setRequired(TRUE);
 		$delCode->getValidatorChain()
 			    ->addByName('Digits');
-
+*/
 		$this->add($category)
 			 ->add($title)
-			 ->add($photo)
+			/* ->add($photo)
 			 ->add($price)
 			 ->add($expires)
 			 ->add($city)
@@ -134,7 +118,7 @@ class PostFilter extends InputFilter
 			 ->add($phone)
 			 ->add($email)
 			 ->add($description)
-		     ->add($delCode)
+		     ->add($delCode)*/
         ;
 	}
 }

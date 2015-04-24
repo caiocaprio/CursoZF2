@@ -42,7 +42,7 @@ class PostForm extends Form
 			                        'placeholder' => 'Digite o título',
                                     'class'=>'teste'));
 		
-        $photo = new Element\Text('photo_filename');
+        /*$photo = new Element\Text('photo_filename');
 		$photo->setLabel('Photo')
 			  ->setAttribute('maxlength', 1024)
 		      ->setAttribute('placeholder', 'Enter URL of a JPG');
@@ -105,13 +105,13 @@ class PostForm extends Form
 				->setAttribute('class', 'captchaStyle')
 				->setAttribute('title', 'Help to prevent SPAM');
 
-
+*/
 		$submit = new Element\Submit('submit');
 		$submit->setAttribute('value', 'Post');
 
 		$this->add($category)
 			 ->add($title)
-			 ->add($photo)
+			 /*->add($photo)
 			 ->add($price)
 			 ->add($expires)
 			 ->add($city)
@@ -120,7 +120,7 @@ class PostForm extends Form
 			 ->add($email)
 			 ->add($description)
 			 ->add($delCode)
-			 ->add($captcha)
+			 ->add($captcha)*/
 			 ->add($submit);
 	}
 }

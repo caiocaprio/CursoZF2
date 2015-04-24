@@ -49,8 +49,6 @@ class ListingsTable extends TableGateway
         $data[city] = trim($city);
         $data[country] = trim($country);
 
-
-
         $date = new \DateTime();
 
         if($data['expires'])
@@ -63,9 +61,11 @@ class ListingsTable extends TableGateway
             }
 
             $data['date_expires'] = $date->format('Y-m-d H:i:s');
-            unset($data['cityCode'], $data['expires'], $data['captcha'], $data['submit']);
-
-            $this->insert($data);
+            unset($data['expires']);
         }
+
+        unset($data['cityCode'], $data['captcha'], $data['submit']);
+
+        $this->insert($data);
     }
 } 
