@@ -19,6 +19,8 @@ class PostForm extends Form
 	 */
 	public function buildForm()
 	{
+        //echo "PostForm::buildForm <br/>";
+
 		/******************************************************************
 		* Isto é um exemplo de como realizar a configurações do formulario,
 		* O importante é registrar o campos do formulário pedidos no exercícios
@@ -42,7 +44,7 @@ class PostForm extends Form
 			                        'placeholder' => 'Digite o título',
                                     'class'=>'teste'));
 		
-        /*$photo = new Element\Text('photo_filename');
+        $photo = new Element\Text('photo_filename');
 		$photo->setLabel('Photo')
 			  ->setAttribute('maxlength', 1024)
 		      ->setAttribute('placeholder', 'Enter URL of a JPG');
@@ -96,22 +98,22 @@ class PostForm extends Form
 			 ->setAttribute('size', 16)
 			 ->setAttribute('maxlength', 16);
 
-		$captcha = new Element\Captcha('captcha');
-		$captchaAdapter = new ImageCaptcha();
-		$captchaAdapter->setWordlen(4)
-			  		   ->setOptions($this->captchaOptions);
-		$captcha->setCaptcha($captchaAdapter)
-				->setLabel('Help us to prevent SPAM!')
-				->setAttribute('class', 'captchaStyle')
-				->setAttribute('title', 'Help to prevent SPAM');
+		//$captcha = new Element\Captcha('captcha');
+		//$captchaAdapter = new ImageCaptcha();
+		//$captchaAdapter->setWordlen(4)
+			  		  // ->setOptions($this->captchaOptions);
+		//$captcha->setCaptcha($captchaAdapter)
+				//->setLabel('Help us to prevent SPAM!')
+				//->setAttribute('class', 'captchaStyle')
+				//->setAttribute('title', 'Help to prevent SPAM');
 
-*/
+
 		$submit = new Element\Submit('submit');
 		$submit->setAttribute('value', 'Post');
 
 		$this->add($category)
 			 ->add($title)
-			 /*->add($photo)
+			 ->add($photo)
 			 ->add($price)
 			 ->add($expires)
 			 ->add($city)
@@ -120,7 +122,7 @@ class PostForm extends Form
 			 ->add($email)
 			 ->add($description)
 			 ->add($delCode)
-			 ->add($captcha)*/
+			// ->add($captcha)
 			 ->add($submit);
 	}
 }

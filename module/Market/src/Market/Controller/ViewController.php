@@ -28,17 +28,6 @@ class ViewController extends BaseController
 
         $listings =  $this->listingsTable->getListingsByCategory($category);
 
-        /*$adapter = new Adapter(array(
-            'driver' => 'Mysqli',
-            'username' => 'caiocaprio3',
-            'password' => 'adm2861989',
-            'dsn' => 'mysql:dbname=caiocaprio3;host=mysql04.nccomunicacao.com',
-            'driver_options' => array(
-                PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'",
-                PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
-            ),
-        ));*/
-
         //add css via controller
         /*$sm = $this->getEvent()->getApplication()->getServiceManager();
         $helper = $sm->get('viewhelpermanager')->get('headLink');

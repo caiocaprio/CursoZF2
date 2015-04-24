@@ -16,6 +16,8 @@ class PostFilter extends InputFilter
 	
 	public function buildFilter()
 	{
+        //echo "PostFilter::buildFilter <br/>";
+
 		/******************************************************************
 		* Isto é um exemplo de como realizar a configurações do filtro,
 		* O importante é registrar o campos do formulário pedidos no exercícios
@@ -40,7 +42,7 @@ class PostFilter extends InputFilter
 			  ->attach($titleRegex)
 			  ->attachByName('StringLength', array('min' => 1, 'max' => 128));
 
-		/*$photo = new Input('photo_filename');
+		$photo = new Input('photo_filename');
 		$photo->getFilterChain()
 				 ->attachByName('StripTags')
 				 ->attachByName('StringTrim');
@@ -81,8 +83,8 @@ class PostFilter extends InputFilter
 		$phone = new Input('contact_phone');
 		$phone->setAllowEmpty(TRUE);
 		$phone->getValidatorChain()
-			  ->attachByName('Regex', array('pattern' => '/^\+?\d{1,4}(-\d{3,4})+$/'));
-		$phone->setErrorMessage('Phone number must be in this format: +nnnn-nnn-nnn-nnnn');
+			  ->attachByName('Regex', array('pattern' => '/^\+?\d{1,4}(-\d{3,5})+$/'));
+		$phone->setErrorMessage('Phone number must be in this format: +9999-999-999-9999');
 		$phone->getFilterChain()
 			  ->attachByName('StripTags')
 			  ->attachByName('StringTrim');
@@ -107,10 +109,10 @@ class PostFilter extends InputFilter
 		$delCode->setRequired(TRUE);
 		$delCode->getValidatorChain()
 			    ->addByName('Digits');
-*/
+
 		$this->add($category)
 			 ->add($title)
-			/* ->add($photo)
+			 ->add($photo)
 			 ->add($price)
 			 ->add($expires)
 			 ->add($city)
@@ -118,7 +120,7 @@ class PostFilter extends InputFilter
 			 ->add($phone)
 			 ->add($email)
 			 ->add($description)
-		     ->add($delCode)*/
+		     ->add($delCode)
         ;
 	}
 }

@@ -10,16 +10,14 @@ class IndexControllerFactory implements FactoryInterface
 
     public function createService(ServiceLocatorInterface $controllerManager)
     {
+        //echo "IndexControllerFactory::createService <br/>";
+
         $allServices = $controllerManager->getServiceLocator();
         $sm = $allServices->get('ServiceManager');
 
-        //$categories = $sm->get('categories');
 
         $indexController = new \Market\Controller\IndexController();
-       // $indexController->setCategory($categories);
-        //$indexController->setPostForm($sm->get('market-post-form'));
         $indexController->setListingsTable($sm->get('listings-table'));
-
         return $indexController;
     }
 }

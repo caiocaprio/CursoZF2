@@ -8,6 +8,7 @@ trait CaptchaTrait
 	 * @return the $captchaOptions
 	 */
 	public function getCaptchaOptions() {
+        //echo "CaptchaTrait::getCaptchaOptions <br/>";
 		return $this->captchaOptions;
 	}
 
@@ -15,6 +16,7 @@ trait CaptchaTrait
 	 * @param field_type $captchaOptions
 	 */
 	public function setCaptchaOptions($captchaOptions) {
+       // echo "CaptchaTrait::setCaptchaOptions <br/>";
 		$this->captchaOptions = $captchaOptions;
 	}
 	

@@ -73,7 +73,7 @@ return array(
     ),
     'service_manager' => array(
         'services' => array(
-            'categories' => array(
+            'market-categories' => array(
                 'barter',
                 'beauty',
                 'clothing',
@@ -91,12 +91,12 @@ return array(
             ),
             'market-captcha-options' => array(
                 'expiration' => 300,
-                'font'        => 'caminho para um arquivos .font',
+                'font'        => __DIR__ . '/../../../public/font/glyphicons-halflings-regular.ttf',
                 'fontSize'    => 24,
                 'height'    => 50,
                 'width'        => 200,
                 'imgDir'    => __DIR__ . '/../../../public/captcha',
-                'imgUrl'    => '/captcha',
+                'imgUrl'    => '../captcha',
             ),
         ),
 

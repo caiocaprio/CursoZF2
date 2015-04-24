@@ -24,13 +24,15 @@ class PostController extends BaseController
 
     public function setPostForm($postForm)
     {
+        // "PostController::setPostForm <br/>";
         $this->postForm = $postForm;
     }
 
     public function indexAction()
     {
-
+       // echo "PostController::indexAction <br/>";
         $data = $this->params()->fromPost();
+
 
 
         $viewModel = new ViewModel(array('postForm'=> $this->postForm, 'data' => $data));
@@ -42,6 +44,7 @@ class PostController extends BaseController
             $this->postForm->setData($data);
             if($this->postForm->isValid())
             {
+
                 $this->listingsTable->addPosting($this->postForm->getData());
                 $this->flashMessenger()->addMessage('Sucesso no Post!');
                 $this->redirect()->toRoute('market');

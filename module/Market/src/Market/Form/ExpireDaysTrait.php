@@ -10,6 +10,7 @@ trait ExpireDaysTrait
 	 * @return the $expireDays
 	 */
 	public function getExpireDays() {
+       // echo "ExpireDaysTrait::getExpireDays <br/>";
 		return $this->expireDays;
 	}
 	
@@ -17,6 +18,7 @@ trait ExpireDaysTrait
 	 * @param array $expireDays;
 	 */
 	public function setExpireDays($expireDays) {
+        //echo "ExpireDaysTrait::setExpireDays <br/>";
 		$this->expireDays = $expireDays;
 	}
 	

@@ -10,6 +10,8 @@ class ViewControllerFactory implements FactoryInterface
 
     public function createService(ServiceLocatorInterface $controllerManager)
     {
+        echo "ViewControllerFactory::createService <br/>";
+
         $allServices = $controllerManager->getServiceLocator();
         $sm = $allServices->get('ServiceManager');
 
@@ -17,7 +19,7 @@ class ViewControllerFactory implements FactoryInterface
 
         $viewController = new \Market\Controller\ViewController();
         //$viewController->setCategory($categories);
-        //$indexController->setPostForm($sm->get('market-post-form'));
+        //$viewController->setPostForm($sm->get('market-post-form'));
         $viewController->setListingsTable($sm->get('listings-table'));
 
         return $viewController;
