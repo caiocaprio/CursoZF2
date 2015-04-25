@@ -46,8 +46,8 @@ class ListingsTable extends TableGateway
     {
 
         list($city, $country) = explode(",", $data['cityCode']);
-        $data[city] = trim($city);
-        $data[country] = trim($country);
+        $data['city'] = trim($city);
+        $data['country'] = trim($country);
 
         $date = new \DateTime();
 
@@ -57,7 +57,7 @@ class ListingsTable extends TableGateway
             {
                 $date->add('P1M');
             }else{
-                $date->add(new \DateTime('P'.$data['expires'].'D'));
+                $date->add(new \DateInterval('P'.$data['expires'].'D'));
             }
 
             $data['date_expires'] = $date->format('Y-m-d H:i:s');
@@ -65,7 +65,6 @@ class ListingsTable extends TableGateway
         }
 
         unset($data['cityCode'], $data['captcha'], $data['submit']);
-
         $this->insert($data);
     }
 } 

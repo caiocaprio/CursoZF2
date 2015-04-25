@@ -91,7 +91,7 @@ return array(
             ),
             'market-captcha-options' => array(
                 'expiration' => 300,
-                'font'        => __DIR__ . '/../../../public/font/glyphicons-halflings-regular.ttf',
+                'font'        => __DIR__ . '/../../../public/fonts/tahoma.ttf',
                 'fontSize'    => 24,
                 'height'    => 50,
                 'width'        => 200,

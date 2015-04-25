@@ -98,14 +98,15 @@ class PostForm extends Form
 			 ->setAttribute('size', 16)
 			 ->setAttribute('maxlength', 16);
 
-		//$captcha = new Element\Captcha('captcha');
-		//$captchaAdapter = new ImageCaptcha();
-		//$captchaAdapter->setWordlen(4)
-			  		  // ->setOptions($this->captchaOptions);
-		//$captcha->setCaptcha($captchaAdapter)
-				//->setLabel('Help us to prevent SPAM!')
-				//->setAttribute('class', 'captchaStyle')
-				//->setAttribute('title', 'Help to prevent SPAM');
+		$captcha = new Element\Captcha('captcha');
+		$captchaAdapter = new ImageCaptcha();
+		$captchaAdapter->setWordlen(4)
+			  		   ->setOptions($this->captchaOptions);
+		$captcha->setCaptcha($captchaAdapter)
+				->setLabel('Help us to prevent SPAM!')
+				->setName('captcha')
+              	->setAttribute('class', 'captchaStyle')
+				->setAttribute('title', 'Help to prevent SPAM');
 
 
 		$submit = new Element\Submit('submit');
@@ -122,7 +123,7 @@ class PostForm extends Form
 			 ->add($email)
 			 ->add($description)
 			 ->add($delCode)
-			// ->add($captcha)
+			 ->add($captcha)
 			 ->add($submit);
 	}
 }
