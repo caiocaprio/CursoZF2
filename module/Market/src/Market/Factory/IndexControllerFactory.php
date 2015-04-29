@@ -15,8 +15,16 @@ class IndexControllerFactory implements FactoryInterface
         $allServices = $controllerManager->getServiceLocator();
         $sm = $allServices->get('ServiceManager');
 
+<<<<<<< HEAD
 
         $indexController = new \Market\Controller\IndexController();
+=======
+        //$categories = $sm->get('categories');
+
+        $indexController = new \Market\Controller\IndexController();
+       // $indexController->setCategory($categories);
+        //$indexController->setPostForm($sm->get('market-post-form'));
+>>>>>>> M10EX1
         $indexController->setListingsTable($sm->get('listings-table'));
         return $indexController;
     }

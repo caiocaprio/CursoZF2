@@ -15,6 +15,11 @@ use Zend\View\Model\ViewModel;
 class IndexController extends BaseController
 {
     use ListingsTableTrait;
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> M10EX1
 
     public function indexAction()
     {

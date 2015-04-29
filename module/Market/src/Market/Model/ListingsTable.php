@@ -17,16 +17,20 @@ class ListingsTable extends TableGateway
 
     public static $tableName = "listings";
 
+<<<<<<< HEAD
     public function getTableName()
     {
         return self::$tableName;
     }
 
+=======
+>>>>>>> M10EX1
     public function getListingsByCategory($category)
     {
         return $this->select(['category'=>$category]);
     }
 
+<<<<<<< HEAD
     public function getListingsById($id)
     {
         return $this->select(['listings_id'=>$id])->current();
@@ -67,4 +71,6 @@ class ListingsTable extends TableGateway
         unset($data['cityCode'], $data['captcha'], $data['submit']);
         $this->insert($data);
     }
+=======
+>>>>>>> M10EX1
 } 

@@ -2,6 +2,7 @@
 <?php echo "<h1>".$this->escapehtml($this->category)."</h1>"; ?>
 
 <?php if($this->list instanceof Zend\Db\ResultSet\ResultSet): ?>
+<<<<<<< HEAD
     <table>
         <tr>
             <th>Item</th>
@@ -19,6 +20,9 @@
             <?php $this->list->next(); ?>
         <?php endwhile; ?>
     </table>
+=======
+
+>>>>>>> M10EX1
     <?php else: ?>
     <?php Zend\Debug\Debug::dump($this->list); ?>
 <?php endif; ?>

@@ -26,7 +26,24 @@ class ViewController extends BaseController
         //$category = $this->params()->fromQuery("category");
         $category = $this->params()->fromRoute("category");
 
+<<<<<<< HEAD
         $listings =  $this->listingsTable->getListingsByCategory($category);
+=======
+        $listings = '';// = $this->listingsTable->getListingsByCategory($category);
+
+        $adapter = new Adapter(array(
+            'driver' => 'Mysqli',
+            'username' => 'caiocaprio3',
+            'password' => 'adm2861989',
+            'dsn' => 'mysql:dbname=caiocaprio3;host=mysql04.nccomunicacao.com',
+            'driver_options' => array(
+                PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'",
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
+            ),
+        ));
+
+
+>>>>>>> M10EX1
 
         //add css via controller
         /*$sm = $this->getEvent()->getApplication()->getServiceManager();
