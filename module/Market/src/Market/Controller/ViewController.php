@@ -13,29 +13,27 @@ namespace Market\Controller;
 use Base\Controller\BaseController;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
+use Zend\Db\Adapter\Adapter;
 
 class ViewController extends BaseController
 {
     use ListingsTableTrait;
-    protected  $category;
 
-    public function setCategory($category)
-    {
-        echo $this->category;
-        $this->category = $category;
-    }
+
 
     public function indexAction()
     {
         //$category = $this->params()->fromQuery("category");
         $category = $this->params()->fromRoute("category");
 
+        $listings =  $this->listingsTable->getListingsByCategory($category);
+
         //add css via controller
         /*$sm = $this->getEvent()->getApplication()->getServiceManager();
         $helper = $sm->get('viewhelpermanager')->get('headLink');
         $helper->prependStylesheet('/css/mystylesheet.css');*/
 
-        return new ViewModel(array('category'=>$category));
+        return new ViewModel(array('category'=>$category, 'list'=>$listings));
     }
 
     public function itemAction()
@@ -43,13 +41,15 @@ class ViewController extends BaseController
         //$itemId = $this->params()->fromQuery('itemId');
         $itemId = $this->params()->fromRoute('itemId');
 
+        $item =  $this->listingsTable->getListingsById($itemId);
+
         if(!$itemId)
         {
             $this->flashMessenger()->addMessage("Item not found");
             return $this->redirect()->toRoute('market');
         }
 
-        return new ViewModel(array('itemId'=>$itemId));
+        return new ViewModel(array('itemId'=>$itemId,'item'=>$item));
     }
 }
 

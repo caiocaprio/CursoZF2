@@ -13,7 +13,7 @@ trait ListingsTableTrait
 {
     private $listingsTable;
 
-    public  function setListingsTable($listingsTable)
+    public function setListingsTable($listingsTable)
     {
         $this->listingsTable = $listingsTable;
     }

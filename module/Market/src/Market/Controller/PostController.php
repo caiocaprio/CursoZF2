@@ -11,29 +11,43 @@ namespace Market\Controller;
 
 
 use Base\Controller\BaseController;
+use Market\Form\CategoryTrait;
 use Zend\View\Model\ViewModel;
 
 class PostController extends BaseController
 {
     use ListingsTableTrait;
-    public $category;
+    use CategoryTrait;
+
 
     private $postForm;
 
     public function setPostForm($postForm)
     {
+        // "PostController::setPostForm <br/>";
         $this->postForm = $postForm;
     }
 
-    public function setCategory($category)
+    public function invalidCount()
     {
-        $this->category = $category;
+        $sessionService = $this->getServiceLocator()->get('application-session');
+        if($sessionService->incrementCount()->isLimit())
+        {
+            $sessionService->resetCount();
+            return true;
+        }
+        return false;
     }
 
     public function indexAction()
     {
 
+
+       // echo "PostController::indexAction <br/>";
         $data = $this->params()->fromPost();
+
+
+
         $viewModel = new ViewModel(array('postForm'=> $this->postForm, 'data' => $data));
         $viewModel->setTemplate('market/post/index.phtml');
 
@@ -42,13 +56,23 @@ class PostController extends BaseController
             $this->postForm->setData($data);
             if($this->postForm->isValid())
             {
+                $this->listingsTable->addPosting($this->postForm->getData());
                 $this->flashMessenger()->addMessage('Sucesso no Post!');
                 $this->redirect()->toRoute('market');
             }else{
-                $invalidView = new ViewModel();
-                $invalidView->setTemplate('market/post/invalid.phtml');
-                $invalidView->addChild($viewModel, 'main');
-                return $invalidView;
+
+                if(!$this->invalidCount())
+                {
+                    $invalidView = new ViewModel();
+                    $invalidView->setTemplate('market/post/invalid.phtml');
+                    $invalidView->addChild($viewModel, 'main');
+                    return $invalidView;
+                }else{
+                    $invalidView = new ViewModel();
+                    $invalidView->setTemplate('market/post/limite-tentativas.phtml');
+                    $invalidView->addChild($viewModel, 'main');
+                    return $invalidView;
+                }
             }
         }
 

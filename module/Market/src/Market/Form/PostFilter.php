@@ -9,29 +9,15 @@ use Market\Form\Filter\Float;
 class PostFilter extends InputFilter
 {
 
-	//use CategoryTrait;
-	//use ExpireDaysTrait;
+	use CategoryTrait;
+	use ExpireDaysTrait;
 
-    private $categories;
 
-    /**
-     * @return mixed
-     */
-    public function getCategories()
-    {
-        return $this->categories;
-    }
-
-    /**
-     * @param mixed $category
-     */
-    public function setCategories($categories)
-    {
-        $this->categories = $categories;
-    }
 	
 	public function buildFilter()
 	{
+        //echo "PostFilter::buildFilter <br/>";
+
 		/******************************************************************
 		* Isto é um exemplo de como realizar a configurações do filtro,
 		* O importante é registrar o campos do formulário pedidos no exercícios
@@ -55,7 +41,7 @@ class PostFilter extends InputFilter
 		$title->getValidatorChain()
 			  ->attach($titleRegex)
 			  ->attachByName('StringLength', array('min' => 1, 'max' => 128));
-        /*
+
 		$photo = new Input('photo_filename');
 		$photo->getFilterChain()
 				 ->attachByName('StripTags')
@@ -70,11 +56,12 @@ class PostFilter extends InputFilter
 			  ->addByName('GreaterThan', array('min' => 0.00));
 		$price->getFilterChain()
 			  ->attach(new Float());	// custom filter
-
+      //  var_dump(array_keys($this->getExpireDays()));
+       // exit;
 		$expires = new Input('expires');
 		$expires->setAllowEmpty(TRUE);
 		$expires->getValidatorChain()
-				->attachByName('InArray', array('haystack' => array_keys($this->getExpireDays())));
+				->attachByName('InArray', array('haystack' => array_keys($this->getExpireDays()),true));
 		$expires->getFilterChain()
 			    ->attachByName('StripTags')
 				->attachByName('StringTrim');
@@ -97,8 +84,8 @@ class PostFilter extends InputFilter
 		$phone = new Input('contact_phone');
 		$phone->setAllowEmpty(TRUE);
 		$phone->getValidatorChain()
-			  ->attachByName('Regex', array('pattern' => '/^\+?\d{1,4}(-\d{3,4})+$/'));
-		$phone->setErrorMessage('Phone number must be in this format: +nnnn-nnn-nnn-nnnn');
+			  ->attachByName('Regex', array('pattern' => '/^\+?\d{1,4}(-\d{3,5})+$/'));
+		$phone->setErrorMessage('Phone number must be in this format: +9999-999-999-9999');
 		$phone->getFilterChain()
 			  ->attachByName('StripTags')
 			  ->attachByName('StringTrim');
@@ -123,10 +110,10 @@ class PostFilter extends InputFilter
 		$delCode->setRequired(TRUE);
 		$delCode->getValidatorChain()
 			    ->addByName('Digits');
-*/
+
 		$this->add($category)
 			 ->add($title)
-			/* ->add($photo)
+			 ->add($photo)
 			 ->add($price)
 			 ->add($expires)
 			 ->add($city)
@@ -134,7 +121,7 @@ class PostFilter extends InputFilter
 			 ->add($phone)
 			 ->add($email)
 			 ->add($description)
-		     ->add($delCode)*/
+		     ->add($delCode)
         ;
 	}
 }

@@ -4,6 +4,7 @@
  * User: caio.caprio
  * Date: 25/02/2015
  * Time: 16:27
+ *
  */
 
 namespace Market;
@@ -19,6 +20,7 @@ class Module
         $app = $e->getApplication();
         $em = $app->getEventManager();
         $sm = $em->getSharedManager();
+
 
         /*$em->attach(MvcEvent::EVENT_DISPATCH, array($this, 'onDispatchEM'), 1000);
         $em->attach(MvcEvent::EVENT_DISPATCH_ERROR, array($this, 'onDispatchErrorEM'), 100);
@@ -137,7 +139,7 @@ class Module
     public function getAutoloaderConfig()
     {
         return array(
-            'Zend\Loader\ClassMapAutoLoader' =>array(
+            'Zend\Loader\ClassMapAutoloader' =>array(
                 __DIR__.'/autoload_classmap.php',
             ),
 

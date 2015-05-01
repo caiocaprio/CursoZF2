@@ -10,15 +10,14 @@ class PostControllerFactory implements FactoryInterface
 
     public function createService(ServiceLocatorInterface $controllerManager)
     {
+        //echo "PostControllerFactory::createService <br/>";
+
         $allServices = $controllerManager->getServiceLocator();
         $sm = $allServices->get('ServiceManager');
 
-        $categories = $sm->get('categories');
-
         $postController = new \Market\Controller\PostController();
-        $postController->setCategory($categories);
-        $postController->setPostForm($sm->get('market-post-form'));
         $postController->setListingsTable($sm->get('listings-table'));
+        $postController->setPostForm($sm->get('market-post-form'));
 
         return $postController;
     }

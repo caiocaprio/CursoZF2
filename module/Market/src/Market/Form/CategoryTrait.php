@@ -8,6 +8,7 @@ trait CategoryTrait
 	 * @return the $categories
 	 */
 	public function getCategories() {
+       // echo "CategoryTrait::getCategories <br/>";
 		return $this->categories;
 	}
 	
@@ -15,6 +16,7 @@ trait CategoryTrait
 	 * @param field_type $categories
 	 */
 	public function setCategories($categories) {
+       // echo "CategoryTrait::setCategories <br/>";
 		$this->categories = $categories;
 	}
 	

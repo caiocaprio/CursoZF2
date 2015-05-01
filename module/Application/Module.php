@@ -11,6 +11,7 @@ namespace Application;
 
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
+use Zend\Session\Container;
 
 class Module
 {
@@ -30,8 +31,7 @@ class Module
 
     }
 
-    /*
-     * public function getServiceConfig()
+    /*public function getServiceConfig()
     {
         return array(
             'invokables'=>array(
@@ -40,6 +40,19 @@ class Module
             )
         );
     }*/
+
+    public function getServiceConfig()
+    {
+        return array(
+            'invokables'=>array(
+                'application-session' => 'Application\Service\ApplicationSessionService'
+            )
+        );
+    }
+
+
+
+
 
     public function onDispatchSM(MvcEvent $e)
     {

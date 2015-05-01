@@ -7,13 +7,15 @@ class PostFilterFactory implements FactoryInterface
 {
 	public function createService(ServiceLocatorInterface $sm)
 	{
+       // echo "PostFilterFactory::createService <br/>";
+
 		$filter = new PostFilter();
 		/*
 		* Isto é um exemplo de como realizar a configurações do filtro,
 		* O importante é registrar o campos do formulário pedidos no exercícios
 		*/
-		$filter->setCategories($sm->get('categories'));
-		//$filter->setExpireDays($sm->get('market-expire-days'));
+		$filter->setCategories($sm->get('market-categories'));
+		$filter->setExpireDays($sm->get('market-expire-days'));
 		$filter->buildFilter();
 		return $filter;
 	}
