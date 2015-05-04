@@ -10,7 +10,7 @@ class ViewControllerFactory implements FactoryInterface
 
     public function createService(ServiceLocatorInterface $controllerManager)
     {
-        echo "ViewControllerFactory::createService <br/>";
+       // echo "ViewControllerFactory::createService <br/>";
 
         $allServices = $controllerManager->getServiceLocator();
         $sm = $allServices->get('ServiceManager');
