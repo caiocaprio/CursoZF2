@@ -23,7 +23,7 @@ class ListingsTableFactory implements FactoryInterface
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
-        echo "ListingsTableFactory::createService <br/>";
+        //echo "ListingsTableFactory::createService <br/>";
         return new ListingsTable(ListingsTable::$tableName,
             $serviceLocator->get('general-adapter'));
     }

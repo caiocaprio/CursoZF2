@@ -7,24 +7,26 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Caprio\Logger\Factory;
+namespace Logger\Factory;
 
-use Caprio\Logger\Service\LogggerService;
 
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
+use Logger\Service\LogggerService;
 
 class LoggerFactory  implements FactoryInterface
 {
     public function createService(ServiceLocatorInterface $sm)
     {
 
-        $config = $sm->get('Log');
+        $config = '';//$sm->get('Config')['Caprio\Logger'];
         echo "<pre>";
-        echo var_dump("AAAAAAAAAAAAAAAAAAAAAAA");
+        echo var_dump($config);
         exit;
+        $logger = new LoggerService();
+       // $log = new LogService();
+       // $log->execute();
 
-        $log = new LogService();
-        $log->execute();
-
-        return  $log;
+        return ;// $log;
     }
 }

@@ -7,7 +7,7 @@ class PostFormFactory implements FactoryInterface
 {
 	public function createService(ServiceLocatorInterface $sm)
 	{
-        echo "PostFormFactory::createService <br/>";
+        //echo "PostFormFactory::createService <br/>";
 
 		/*
 		* Isto é um exemplo de como realizar a configurações do formulário,

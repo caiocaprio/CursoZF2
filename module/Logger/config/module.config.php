@@ -1,9 +1,8 @@
 <?php
-
+namespace Logger;
 return array(
 
-
-    'Caprio\Logger\Config' => array(
+    'Caprio-Logger' => array(
         'registerErrorHandler'     => 'true', // errors logged to your writers
         'registerExceptionHandler' => 'true', // exceptions logged to your writers
 
@@ -39,6 +38,12 @@ return array(
         )
 
 
+    ),
+
+    'service_manager' => array(
+        'factories' => array(
+            'Caprio\Logger' => 'Logger\Factory\FactoryLogger',
+        )
     ),
 
 

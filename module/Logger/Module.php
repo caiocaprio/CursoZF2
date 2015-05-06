@@ -9,9 +9,9 @@
 
 namespace Logger;
 
-use Zend\Mvc\ModuleRouteListener;
+
 use Zend\Mvc\MvcEvent;
-use Logger\Service\LoggerService;
+
 
 class Module
 {
@@ -48,22 +48,15 @@ class Module
         );
     }
 
-    public function getServiceConfig()
+   /* public function getServiceConfig()
     {
 
         return array(
             'factories' => array(
-                'Caprio\Logger' => function($sm){
-                    $config = $sm->get('Config')['Caprio\Logger\Config'];
-                    $logger = new LoggerService();
-
-                    echo var_dump($logger);
-                    exit;
-                    return $logger;
-                },
+                'Caprio\Logger' => 'Logger\Factory\LoggerFactory'
             )
         );
-    }
+    }*/
 
     /*public function getServiceConfig()
     {
