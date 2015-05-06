@@ -4,8 +4,9 @@ namespace EddieJaoude\Zf2Logger\Listener;
 use Zend\EventManager\ListenerAggregateInterface;
 use Zend\EventManager\EventManagerInterface;
 use Zend\EventManager\EventInterface;
-use Zend\Log\Logger as Log;
 use Zend\Mvc\MvcEvent;
+use Zend\Log\Logger as Log;
+
 use Zend\Stdlib\CallbackHandler;
 
 /**

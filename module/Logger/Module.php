@@ -10,7 +10,9 @@
 namespace Logger;
 
 
+use Logger\Service\LoggerService;
 use Zend\Mvc\MvcEvent;
+use Logger\Event\ExceptionEvent;
 
 
 class Module
@@ -18,16 +20,12 @@ class Module
 
     public function onBootstrap(MvcEvent $e)
     {
-        $eventManager        = $e->getApplication()->getEventManager();
+        $application        = $e->getApplication();
+        $eventManager       = $application->getEventManager();
+        $serviceManager     = $application->getServiceManager();
 
-        $eventManager->attach('dispatch.error', function($event){
-            $exception = $event->getResult()->exception;
-            if ($exception) {
-                $sm = $event->getApplication()->getServiceManager();
-                $service = $sm->get('Caprio\Logger');
-                $service->logException($exception);
-            }
-        });
+
+        $eventManager->attach(new ExceptionEvent($serviceManager->get('Caprio\Logger')));
 
         return;
     }

@@ -1,14 +1,15 @@
 <?php
 namespace Logger;
+
 return array(
 
-    'Caprio-Logger' => array(
+    'Caprio\Logger' => array(
         'registerErrorHandler'     => 'true', // errors logged to your writers
         'registerExceptionHandler' => 'true', // exceptions logged to your writers
 
         // multiple zend writer output & zend priority filters
         'writers' => array(
-            'standard-error' => array(
+           /* 'standard-error' => array(
                 'adapter'  => '\Zend\Log\Writer\Stream',
                 'options'  => array(
                     'output' => 'php://stderr'
@@ -16,17 +17,20 @@ return array(
                 // options: EMERG, ALERT, CRIT, ERR, WARN, NOTICE, INFO, DEBUG
                 'filter' => \Zend\Log\Logger::DEBUG,
                 'enabled' => true
-            ),
+            ),*/
             'standard-file' => array(
                 'adapter'  => '\Zend\Log\Writer\Stream',
                 'options'  => array(
-                    'output' => 'data/application.log', // path to file
+                    'output' => 'data/', // path to file
+                    'filename' => 'log_erros', // path to file
+                    'extension' => '.log', // path to file
+                    'dateFormat' => 'd-m-Y', // path to file
                 ),
                 // options: EMERG, ALERT, CRIT, ERR, WARN, NOTICE, INFO, DEBUG
                 'filter' => \Zend\Log\Logger::DEBUG,
                 'enabled' => true
             ),
-            'standard-db' => array(
+           /* 'standard-db' => array(
                 'adapter'  => '\Zend\Log\Writer\Stream',
                 'options'  => array(
                     'output' => '', // path to file
@@ -34,7 +38,7 @@ return array(
                 // options: EMERG, ALERT, CRIT, ERR, WARN, NOTICE, INFO, DEBUG
                 'filter' => \Zend\Log\Logger::DEBUG,
                 'enabled' => true
-            ),
+            ),*/
         )
 
 
@@ -42,12 +46,7 @@ return array(
 
     'service_manager' => array(
         'factories' => array(
-            'Caprio\Logger' => 'Logger\Factory\FactoryLogger',
+            'Caprio\Logger' => 'Logger\Factory\LoggerFactory',
         )
     ),
-
-
-
-
-
 );
