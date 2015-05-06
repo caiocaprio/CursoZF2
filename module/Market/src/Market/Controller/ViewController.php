@@ -23,6 +23,7 @@ class ViewController extends BaseController
 
     public function indexAction()
     {
+        //$this->createLogDb('teste');
         //$category = $this->params()->fromQuery("category");
         $category = $this->params()->fromRoute("category");
 

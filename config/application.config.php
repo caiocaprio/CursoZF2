@@ -8,6 +8,8 @@ return array(
         'Base',
         ///'Search',
         'ZendDeveloperTools',
+        //'EddieJaoude\Zf2Logger',
+        'Logger',
     ),
 
 

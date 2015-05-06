@@ -1,0 +1,2077 @@
+2015-05-06T04:24:17+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Request] => Zend\Uri\Http Object
+                (
+                    [validHostTypes:protected] => 19
+                    [user:protected] => 
+                    [password:protected] => 
+                    [scheme:protected] => http
+                    [userInfo:protected] => 
+                    [host:protected] => localhost
+                    [port:protected] => 
+                    [path:protected] => /cursozf2/public/market/view/main/beauty
+                    [query:protected] => 
+                    [fragment:protected] => 
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T04:24:17+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 200
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ZF2 Skeleton Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Le styles -->
+    <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <!-- Scripts -->
+    <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/view.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo-market.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="/cursozf2/public/market">Home</a></li>
+                <li ><a href="/cursozf2/public/market/post">New Post</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container">
+    <div class="col-lg-2">
+        <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+    </div>
+    <div class="col-lg-8">
+        <script type="text/javascript" src="/cursozf2/public/js/view.js"></script><h1>beauty</h1>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th></th>
+            <th>Posted</th>
+        </tr>
+                <tr style="background-color: #F9A770">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/1">Classic Cuts</a></td>
+            <td>4068.68</td>
+            <td></td>
+            <td>2013-08-16 17:43:05</td>
+        </tr>
+                            <tr style="background-color: #FAC769">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/2">Discount Lipstick</a></td>
+            <td>8774.74</td>
+            <td></td>
+            <td>2013-03-26 22:41:27</td>
+        </tr>
+                            <tr style="background-color: #FAAE58">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/3">Handmade Jewelry</a></td>
+            <td>1667.63</td>
+            <td></td>
+            <td>2013-05-05 04:18:44</td>
+        </tr>
+                            <tr style="background-color: #F9A770">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/4">Muga Makeup</a></td>
+            <td>2013.95</td>
+            <td></td>
+            <td>2013-04-24 21:23:46</td>
+        </tr>
+                            <tr style="background-color: #FAC769">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/55">teste2</a></td>
+            <td>10</td>
+            <td></td>
+            <td>2015-04-24 17:32:31</td>
+        </tr>
+                        </table>
+        </div>
+    <hr>
+    <footer>
+        <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+    </footer>
+</div> <!-- /container -->
+
+</body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T04:24:17+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Request] => Zend\Uri\Http Object
+                (
+                    [validHostTypes:protected] => 19
+                    [user:protected] => 
+                    [password:protected] => 
+                    [scheme:protected] => http
+                    [userInfo:protected] => 
+                    [host:protected] => localhost
+                    [port:protected] => 
+                    [path:protected] => /cursozf2/public/market/view/main/beauty
+                    [query:protected] => 
+                    [fragment:protected] => 
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T04:24:17+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 200
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ZF2 Skeleton Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Le styles -->
+    <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <!-- Scripts -->
+    <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/view.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo-market.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="/cursozf2/public/market">Home</a></li>
+                <li ><a href="/cursozf2/public/market/post">New Post</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container">
+    <div class="col-lg-2">
+        <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+    </div>
+    <div class="col-lg-8">
+        <script type="text/javascript" src="/cursozf2/public/js/view.js"></script><h1>beauty</h1>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th></th>
+            <th>Posted</th>
+        </tr>
+                <tr style="background-color: #F9A770">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/1">Classic Cuts</a></td>
+            <td>4068.68</td>
+            <td></td>
+            <td>2013-08-16 17:43:05</td>
+        </tr>
+                            <tr style="background-color: #FAC769">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/2">Discount Lipstick</a></td>
+            <td>8774.74</td>
+            <td></td>
+            <td>2013-03-26 22:41:27</td>
+        </tr>
+                            <tr style="background-color: #FAAE58">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/3">Handmade Jewelry</a></td>
+            <td>1667.63</td>
+            <td></td>
+            <td>2013-05-05 04:18:44</td>
+        </tr>
+                            <tr style="background-color: #F9A770">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/4">Muga Makeup</a></td>
+            <td>2013.95</td>
+            <td></td>
+            <td>2013-04-24 21:23:46</td>
+        </tr>
+                            <tr style="background-color: #FAC769">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/55">teste2</a></td>
+            <td>10</td>
+            <td></td>
+            <td>2015-04-24 17:32:31</td>
+        </tr>
+                        </table>
+        </div>
+    <hr>
+    <footer>
+        <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+    </footer>
+</div> <!-- /container -->
+
+</body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T04:24:17+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 404
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ZF2 Skeleton Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Le styles -->
+        <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <!-- Scripts -->
+        <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="/cursozf2/public/">Homeee</a></li>
+                        <li ><a href="/cursozf2/public/market/post">New Post</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container">
+            <div class="col-lg-2">
+                                <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+            </div>
+            <div class="col-lg-8">
+              <h1>A 404 error occurred</h1>
+<h2>Page not found.</h2>
+bbbbbbbbbb
+
+
+
+<p>The requested URL could not be matched by routing.</p>
+
+
+
+
+
+<h3>No Exception available</h3>
+
+
+            </div>
+            <hr>
+            <footer>
+                <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+            </footer>
+        </div> <!-- /container -->
+            </body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:42:57+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Request] => Zend\Uri\Http Object
+                (
+                    [validHostTypes:protected] => 19
+                    [user:protected] => 
+                    [password:protected] => 
+                    [scheme:protected] => http
+                    [userInfo:protected] => 
+                    [host:protected] => localhost
+                    [port:protected] => 
+                    [path:protected] => /cursozf2/public/market/view/main/beauty
+                    [query:protected] => 
+                    [fragment:protected] => 
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:42:58+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 200
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ZF2 Skeleton Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Le styles -->
+    <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <!-- Scripts -->
+    <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/view.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo-market.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="/cursozf2/public/market">Home</a></li>
+                <li ><a href="/cursozf2/public/market/post">New Post</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container">
+    <div class="col-lg-2">
+        <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+    </div>
+    <div class="col-lg-8">
+        <script type="text/javascript" src="/cursozf2/public/js/view.js"></script><h1>beauty</h1>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th></th>
+            <th>Posted</th>
+        </tr>
+                <tr style="background-color: #F9A770">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/1">Classic Cuts</a></td>
+            <td>4068.68</td>
+            <td></td>
+            <td>2013-08-16 17:43:05</td>
+        </tr>
+                            <tr style="background-color: #FAC769">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/2">Discount Lipstick</a></td>
+            <td>8774.74</td>
+            <td></td>
+            <td>2013-03-26 22:41:27</td>
+        </tr>
+                            <tr style="background-color: #FAAE58">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/3">Handmade Jewelry</a></td>
+            <td>1667.63</td>
+            <td></td>
+            <td>2013-05-05 04:18:44</td>
+        </tr>
+                            <tr style="background-color: #F9A770">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/4">Muga Makeup</a></td>
+            <td>2013.95</td>
+            <td></td>
+            <td>2013-04-24 21:23:46</td>
+        </tr>
+                            <tr style="background-color: #FAC769">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/55">teste2</a></td>
+            <td>10</td>
+            <td></td>
+            <td>2015-04-24 17:32:31</td>
+        </tr>
+                        </table>
+        </div>
+    <hr>
+    <footer>
+        <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+    </footer>
+</div> <!-- /container -->
+
+</body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:42:58+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 404
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ZF2 Skeleton Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Le styles -->
+        <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <!-- Scripts -->
+        <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="/cursozf2/public/">Homeee</a></li>
+                        <li ><a href="/cursozf2/public/market/post">New Post</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container">
+            <div class="col-lg-2">
+                                <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+            </div>
+            <div class="col-lg-8">
+              <h1>A 404 error occurred</h1>
+<h2>Page not found.</h2>
+bbbbbbbbbb
+
+
+
+<p>The requested URL could not be matched by routing.</p>
+
+
+
+
+
+<h3>No Exception available</h3>
+
+
+            </div>
+            <hr>
+            <footer>
+                <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+            </footer>
+        </div> <!-- /container -->
+            </body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:43:12+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Request] => Zend\Uri\Http Object
+                (
+                    [validHostTypes:protected] => 19
+                    [user:protected] => 
+                    [password:protected] => 
+                    [scheme:protected] => http
+                    [userInfo:protected] => 
+                    [host:protected] => localhost
+                    [port:protected] => 
+                    [path:protected] => /cursozf2/public/market/view/main/beauty
+                    [query:protected] => 
+                    [fragment:protected] => 
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:43:12+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 200
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ZF2 Skeleton Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Le styles -->
+    <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <!-- Scripts -->
+    <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/view.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo-market.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="/cursozf2/public/market">Home</a></li>
+                <li ><a href="/cursozf2/public/market/post">New Post</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container">
+    <div class="col-lg-2">
+        <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+    </div>
+    <div class="col-lg-8">
+        <script type="text/javascript" src="/cursozf2/public/js/view.js"></script><h1>beauty</h1>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th></th>
+            <th>Posted</th>
+        </tr>
+                <tr style="background-color: #F9A770">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/1">Classic Cuts</a></td>
+            <td>4068.68</td>
+            <td></td>
+            <td>2013-08-16 17:43:05</td>
+        </tr>
+                            <tr style="background-color: #FAC769">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/2">Discount Lipstick</a></td>
+            <td>8774.74</td>
+            <td></td>
+            <td>2013-03-26 22:41:27</td>
+        </tr>
+                            <tr style="background-color: #FAAE58">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/3">Handmade Jewelry</a></td>
+            <td>1667.63</td>
+            <td></td>
+            <td>2013-05-05 04:18:44</td>
+        </tr>
+                            <tr style="background-color: #F9A770">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/4">Muga Makeup</a></td>
+            <td>2013.95</td>
+            <td></td>
+            <td>2013-04-24 21:23:46</td>
+        </tr>
+                            <tr style="background-color: #FAC769">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/55">teste2</a></td>
+            <td>10</td>
+            <td></td>
+            <td>2015-04-24 17:32:31</td>
+        </tr>
+                        </table>
+        </div>
+    <hr>
+    <footer>
+        <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+    </footer>
+</div> <!-- /container -->
+
+</body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:43:12+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 404
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ZF2 Skeleton Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Le styles -->
+        <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <!-- Scripts -->
+        <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="/cursozf2/public/">Homeee</a></li>
+                        <li ><a href="/cursozf2/public/market/post">New Post</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container">
+            <div class="col-lg-2">
+                                <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+            </div>
+            <div class="col-lg-8">
+              <h1>A 404 error occurred</h1>
+<h2>Page not found.</h2>
+bbbbbbbbbb
+
+
+
+<p>The requested URL could not be matched by routing.</p>
+
+
+
+
+
+<h3>No Exception available</h3>
+
+
+            </div>
+            <hr>
+            <footer>
+                <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+            </footer>
+        </div> <!-- /container -->
+            </body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:43:21+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Request] => Zend\Uri\Http Object
+                (
+                    [validHostTypes:protected] => 19
+                    [user:protected] => 
+                    [password:protected] => 
+                    [scheme:protected] => http
+                    [userInfo:protected] => 
+                    [host:protected] => localhost
+                    [port:protected] => 
+                    [path:protected] => /cursozf2/public/market/view/main/beauty
+                    [query:protected] => 
+                    [fragment:protected] => 
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:43:21+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 200
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ZF2 Skeleton Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Le styles -->
+    <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <!-- Scripts -->
+    <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/view.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo-market.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="/cursozf2/public/market">Home</a></li>
+                <li ><a href="/cursozf2/public/market/post">New Post</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container">
+    <div class="col-lg-2">
+        <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+    </div>
+    <div class="col-lg-8">
+        <script type="text/javascript" src="/cursozf2/public/js/view.js"></script><h1>beauty</h1>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th></th>
+            <th>Posted</th>
+        </tr>
+                <tr style="background-color: #F9A770">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/1">Classic Cuts</a></td>
+            <td>4068.68</td>
+            <td></td>
+            <td>2013-08-16 17:43:05</td>
+        </tr>
+                            <tr style="background-color: #FAC769">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/2">Discount Lipstick</a></td>
+            <td>8774.74</td>
+            <td></td>
+            <td>2013-03-26 22:41:27</td>
+        </tr>
+                            <tr style="background-color: #FAAE58">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/3">Handmade Jewelry</a></td>
+            <td>1667.63</td>
+            <td></td>
+            <td>2013-05-05 04:18:44</td>
+        </tr>
+                            <tr style="background-color: #F9A770">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/4">Muga Makeup</a></td>
+            <td>2013.95</td>
+            <td></td>
+            <td>2013-04-24 21:23:46</td>
+        </tr>
+                            <tr style="background-color: #FAC769">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/55">teste2</a></td>
+            <td>10</td>
+            <td></td>
+            <td>2015-04-24 17:32:31</td>
+        </tr>
+                        </table>
+        </div>
+    <hr>
+    <footer>
+        <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+    </footer>
+</div> <!-- /container -->
+
+</body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:43:22+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 404
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ZF2 Skeleton Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Le styles -->
+        <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <!-- Scripts -->
+        <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="/cursozf2/public/">Homeee</a></li>
+                        <li ><a href="/cursozf2/public/market/post">New Post</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container">
+            <div class="col-lg-2">
+                                <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+            </div>
+            <div class="col-lg-8">
+              <h1>A 404 error occurred</h1>
+<h2>Page not found.</h2>
+bbbbbbbbbb
+
+
+
+<p>The requested URL could not be matched by routing.</p>
+
+
+
+
+
+<h3>No Exception available</h3>
+
+
+            </div>
+            <hr>
+            <footer>
+                <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+            </footer>
+        </div> <!-- /container -->
+            </body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:52:00+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Request] => Zend\Uri\Http Object
+                (
+                    [validHostTypes:protected] => 19
+                    [user:protected] => 
+                    [password:protected] => 
+                    [scheme:protected] => http
+                    [userInfo:protected] => 
+                    [host:protected] => localhost
+                    [port:protected] => 
+                    [path:protected] => /cursozf2/public/market/view/main/beauty
+                    [query:protected] => 
+                    [fragment:protected] => 
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:52:00+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 200
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ZF2 Skeleton Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Le styles -->
+    <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <!-- Scripts -->
+    <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/view.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo-market.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="/cursozf2/public/market">Home</a></li>
+                <li ><a href="/cursozf2/public/market/post">New Post</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container">
+    <div class="col-lg-2">
+        <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+    </div>
+    <div class="col-lg-8">
+        <script type="text/javascript" src="/cursozf2/public/js/view.js"></script><h1>beauty</h1>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th></th>
+            <th>Posted</th>
+        </tr>
+                <tr style="background-color: #F9A770">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/1">Classic Cuts</a></td>
+            <td>4068.68</td>
+            <td></td>
+            <td>2013-08-16 17:43:05</td>
+        </tr>
+                            <tr style="background-color: #FAC769">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/2">Discount Lipstick</a></td>
+            <td>8774.74</td>
+            <td></td>
+            <td>2013-03-26 22:41:27</td>
+        </tr>
+                            <tr style="background-color: #FAAE58">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/3">Handmade Jewelry</a></td>
+            <td>1667.63</td>
+            <td></td>
+            <td>2013-05-05 04:18:44</td>
+        </tr>
+                            <tr style="background-color: #F9A770">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/4">Muga Makeup</a></td>
+            <td>2013.95</td>
+            <td></td>
+            <td>2013-04-24 21:23:46</td>
+        </tr>
+                            <tr style="background-color: #FAC769">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/55">teste2</a></td>
+            <td>10</td>
+            <td></td>
+            <td>2015-04-24 17:32:31</td>
+        </tr>
+                        </table>
+        </div>
+    <hr>
+    <footer>
+        <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+    </footer>
+</div> <!-- /container -->
+
+</body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:52:00+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 404
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ZF2 Skeleton Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Le styles -->
+        <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <!-- Scripts -->
+        <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="/cursozf2/public/">Homeee</a></li>
+                        <li ><a href="/cursozf2/public/market/post">New Post</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container">
+            <div class="col-lg-2">
+                                <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+            </div>
+            <div class="col-lg-8">
+              <h1>A 404 error occurred</h1>
+<h2>Page not found.</h2>
+bbbbbbbbbb
+
+
+
+<p>The requested URL could not be matched by routing.</p>
+
+
+
+
+
+<h3>No Exception available</h3>
+
+
+            </div>
+            <hr>
+            <footer>
+                <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+            </footer>
+        </div> <!-- /container -->
+            </body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:54:26+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Request] => Zend\Uri\Http Object
+                (
+                    [validHostTypes:protected] => 19
+                    [user:protected] => 
+                    [password:protected] => 
+                    [scheme:protected] => http
+                    [userInfo:protected] => 
+                    [host:protected] => localhost
+                    [port:protected] => 
+                    [path:protected] => /cursozf2/public/market/view/main/beauty
+                    [query:protected] => 
+                    [fragment:protected] => 
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:54:26+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 200
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ZF2 Skeleton Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Le styles -->
+    <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <!-- Scripts -->
+    <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/view.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo-market.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="/cursozf2/public/market">Home</a></li>
+                <li ><a href="/cursozf2/public/market/post">New Post</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container">
+    <div class="col-lg-2">
+        <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+    </div>
+    <div class="col-lg-8">
+        <script type="text/javascript" src="/cursozf2/public/js/view.js"></script><h1>beauty</h1>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th></th>
+            <th>Posted</th>
+        </tr>
+                <tr style="background-color: #F9A770">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/1">Classic Cuts</a></td>
+            <td>4068.68</td>
+            <td></td>
+            <td>2013-08-16 17:43:05</td>
+        </tr>
+                            <tr style="background-color: #FAC769">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/2">Discount Lipstick</a></td>
+            <td>8774.74</td>
+            <td></td>
+            <td>2013-03-26 22:41:27</td>
+        </tr>
+                            <tr style="background-color: #FAAE58">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/3">Handmade Jewelry</a></td>
+            <td>1667.63</td>
+            <td></td>
+            <td>2013-05-05 04:18:44</td>
+        </tr>
+                            <tr style="background-color: #F9A770">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/4">Muga Makeup</a></td>
+            <td>2013.95</td>
+            <td></td>
+            <td>2013-04-24 21:23:46</td>
+        </tr>
+                            <tr style="background-color: #FAC769">
+            <td><a href="http://localhost/cursozf2/public/market/view/item/55">teste2</a></td>
+            <td>10</td>
+            <td></td>
+            <td>2015-04-24 17:32:31</td>
+        </tr>
+                        </table>
+        </div>
+    <hr>
+    <footer>
+        <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+    </footer>
+</div> <!-- /container -->
+
+</body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:54:27+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 404
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ZF2 Skeleton Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Le styles -->
+        <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <!-- Scripts -->
+        <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="/cursozf2/public/">Homeee</a></li>
+                        <li ><a href="/cursozf2/public/market/post">New Post</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container">
+            <div class="col-lg-2">
+                                <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+            </div>
+            <div class="col-lg-8">
+              <h1>A 404 error occurred</h1>
+<h2>Page not found.</h2>
+bbbbbbbbbb
+
+
+
+<p>The requested URL could not be matched by routing.</p>
+
+
+
+
+
+<h3>No Exception available</h3>
+
+
+            </div>
+            <hr>
+            <footer>
+                <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+            </footer>
+        </div> <!-- /container -->
+            </body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:54:29+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Request] => Zend\Uri\Http Object
+                (
+                    [validHostTypes:protected] => 19
+                    [user:protected] => 
+                    [password:protected] => 
+                    [scheme:protected] => http
+                    [userInfo:protected] => 
+                    [host:protected] => localhost
+                    [port:protected] => 
+                    [path:protected] => /cursozf2/public/
+                    [query:protected] => 
+                    [fragment:protected] => 
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:54:29+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 200
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ZF2 Skeleton Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Le styles -->
+        <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <!-- Scripts -->
+        <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/cursozf2/public/">Homeee</a></li>
+                        <li ><a href="/cursozf2/public/market/post">New Post</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container">
+            <div class="col-lg-2">
+                                <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+            </div>
+            <div class="col-lg-8">
+              <div class="jumbotron">
+    <h1>Welcome to <span class="zf-green">Zend Framework 2</span></h1>
+    <p>Congratulations! You have successfully installed the <a href="https://github.com/zendframework/ZendSkeletonApplication" target="_blank">ZF2 Skeleton Application</a>. You are currently running Zend Framework version 2.3.4. This skeleton can serve as a simple starting point for you to begin building your application on ZF2.</p>
+    <p><a class="btn btn-success btn-lg" href="https://github.com/zendframework/zf2" target="_blank">Fork Zend Framework 2 on GitHub &raquo;</a></p>
+</div>
+
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Follow Development</h3>
+            </div>
+            <div class="panel-body">
+                <p>Zend Framework 2 is under active development. If you are interested in following the development of ZF2, there is a special ZF2 portal on the official Zend Framework website which provides links to the ZF2 <a href="http://framework.zend.com/wiki/display/ZFDEV2/Home">wiki</a>, <a href="http://framework.zend.com/zf2/blog">dev blog</a>, <a href="https://github.com/zendframework/zf2/issues">issue tracker</a>, and much more. This is a great resource for staying up to date with the latest developments!</p>
+                <p><a class="btn btn-success pull-right" href="http://framework.zend.com/zf2" target="_blank">ZF2 Development Portal &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Discover Modules</h3>
+            </div>
+            <div class="panel-body">
+                <p>The community is working on developing a community site to serve as a repository and gallery for ZF2 modules. The project is available <a href="https://github.com/zendframework/modules.zendframework.com">on GitHub</a>. The site is currently live and currently contains a list of some of the modules already available for ZF2.</p>
+                <p><a class="btn btn-success pull-right" href="http://modules.zendframework.com/" target="_blank">Explore ZF2 Modules &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Help &amp; Support</h3>
+            </div>
+            <div class="panel-body">
+                <p>If you need any help or support while developing with ZF2, you may reach us via IRC: <a href="irc://irc.freenode.net/zftalk">#zftalk on Freenode</a>. We'd love to hear any questions or feedback you may have regarding the beta releases. Alternatively, you may subscribe and post questions to the <a href="http://framework.zend.com/wiki/display/ZFDEV/Mailing+Lists">mailing lists</a>.</p>
+                <p><a class="btn btn-success pull-right" href="http://webchat.freenode.net?channels=zftalk" target="_blank">Ping us on IRC &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+            </div>
+            <hr>
+            <footer>
+                <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+            </footer>
+        </div> <!-- /container -->
+            </body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:54:30+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Request] => Zend\Uri\Http Object
+                (
+                    [validHostTypes:protected] => 19
+                    [user:protected] => 
+                    [password:protected] => 
+                    [scheme:protected] => http
+                    [userInfo:protected] => 
+                    [host:protected] => localhost
+                    [port:protected] => 
+                    [path:protected] => /cursozf2/public/market/post
+                    [query:protected] => 
+                    [fragment:protected] => 
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T05:54:31+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 200
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ZF2 Skeleton Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Le styles -->
+    <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/css/market/view-post-index.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <!-- Scripts -->
+    <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo-market.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="/cursozf2/public/market">Home</a></li>
+                <li class="active"><a href="/cursozf2/public/market/post">New Post</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container">
+    <div class="col-lg-2">
+        <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+    </div>
+    <div class="col-lg-8">
+        
+<h1>Post Controller</h1>
+
+<form action="" method="POST"><fieldset ><label><span>Category</span><select name="category"><option value="barter">barter</option>
+<option value="beauty">beauty</option>
+<option value="clothing">clothing</option>
+<option value="computer">computer</option>
+<option value="entertainment">entertainment</option>
+<option value="free">free</option>
+<option value="garden">garden</option>
+<option value="general">general</option></select></label><label><span>Title</span><input type="text" name="title" size="60" required="required" placeholder="Digite&#x20;o&#x20;t&#xED;tulo" class="teste" value="" maxlength="128"></label><label><span>Photo</span><input type="text" name="photo_filename" maxlength="1024" placeholder="Enter&#x20;URL&#x20;of&#x20;a&#x20;JPG" value=""></label><label><span>Price</span><input type="text" name="price" title="Enter&#x20;price&#x20;as&#x20;nnn.nn" size="16" maxlength="16" placeholder="Enter&#x20;some&#x20;value" value=""></label><fieldset><legend>Expires</legend><label><input type="radio" name="expires" title="The&#x20;expiration&#x20;date&#x20;will&#x20;be&#x20;calculated&#x20;from&#x20;today" class="expiresButton" value="0">Nunca</label><label><input type="radio" name="expires" title="The&#x20;expiration&#x20;date&#x20;will&#x20;be&#x20;calculated&#x20;from&#x20;today" class="expiresButton" value="1">Amanhã</label><label><input type="radio" name="expires" title="The&#x20;expiration&#x20;date&#x20;will&#x20;be&#x20;calculated&#x20;from&#x20;today" class="expiresButton" value="7">Daqui há uma semana</label><label><input type="radio" name="expires" title="The&#x20;expiration&#x20;date&#x20;will&#x20;be&#x20;calculated&#x20;from&#x20;today" class="expiresButton" value="30">Daqui um mês</label></fieldset><label for="cityCode">Nearest City</label><input type="text" name="cityCode" title="Select&#x20;the&#x20;city&#x20;of&#x20;the&#x20;item" id="cityCode" placeholder="Start&#x20;typing&#x20;and&#x20;choose&#x20;the&#x20;city" value=""><label><span>Contact Name</span><input type="text" name="contact_name" title="Enter&#x20;the&#x20;name&#x20;of&#x20;the&#x20;person&#x20;to&#x20;contact&#x20;for&#x20;this&#x20;item" size="40" maxlength="255" value=""></label><label><span>Contact Phone Number</span><input type="text" name="contact_phone" title="Enter&#x20;the&#x20;phone&#x20;number&#x20;of&#x20;the&#x20;person&#x20;to&#x20;contact&#x20;for&#x20;this&#x20;item" size="20" maxlength="32" value=""></label><label><span>Contact Email</span><input type="email" name="contact_email" title="Enter&#x20;the&#x20;email&#x20;address&#x20;of&#x20;the&#x20;person&#x20;to&#x20;contact&#x20;for&#x20;this&#x20;item" size="40" maxlength="255" value=""></label><label><span>Description</span><textarea name="description" title="Enter&#x20;a&#x20;suitable&#x20;description&#x20;for&#x20;this&#x20;posting" rows="4" cols="80"></textarea></label><label><span>Delete Code</span><input type="text" name="delete_code" title="Enter&#x20;the&#x20;delete&#x20;code&#x20;for&#x20;this&#x20;item" size="16" maxlength="16" value=""></label><fieldset><legend>Help us to prevent SPAM!</legend><img width="200" height="50" alt="" src="..&#x2F;captcha&#x2F;c405def93e94589898606b168533682c.png"><input name="captcha&#x5B;id&#x5D;" class="captchaStyle" title="Help&#x20;to&#x20;prevent&#x20;SPAM" type="hidden" value="c405def93e94589898606b168533682c"><input name="captcha&#x5B;input&#x5D;" class="captchaStyle" title="Help&#x20;to&#x20;prevent&#x20;SPAM" type="text"></fieldset><input type="submit" name="submit" value="Post"></fieldset></form>
+<pre>array(0) {
+}
+</pre>
+
+
+
+    </div>
+    <hr>
+    <footer>
+        <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+    </footer>
+</div> <!-- /container -->
+
+</body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"m7av49gj060pgkecrcq8etm110\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T06:23:58+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Request] => Zend\Uri\Http Object
+                (
+                    [validHostTypes:protected] => 19
+                    [user:protected] => 
+                    [password:protected] => 
+                    [scheme:protected] => http
+                    [userInfo:protected] => 
+                    [host:protected] => localhost
+                    [port:protected] => 
+                    [path:protected] => /cursozf2/public/market/post
+                    [query:protected] => 
+                    [fragment:protected] => 
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T06:23:58+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 200
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ZF2 Skeleton Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Le styles -->
+    <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/css/market/view-post-index.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <!-- Scripts -->
+    <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo-market.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="/cursozf2/public/market">Home</a></li>
+                <li class="active"><a href="/cursozf2/public/market/post">New Post</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container">
+    <div class="col-lg-2">
+        <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+    </div>
+    <div class="col-lg-8">
+        
+<h1>Post Controller</h1>
+
+<form action="" method="POST"><fieldset ><label><span>Category</span><select name="category"><option value="barter">barter</option>
+<option value="beauty">beauty</option>
+<option value="clothing">clothing</option>
+<option value="computer">computer</option>
+<option value="entertainment">entertainment</option>
+<option value="free">free</option>
+<option value="garden">garden</option>
+<option value="general">general</option></select></label><label><span>Title</span><input type="text" name="title" size="60" required="required" placeholder="Digite&#x20;o&#x20;t&#xED;tulo" class="teste" value="" maxlength="128"></label><label><span>Photo</span><input type="text" name="photo_filename" maxlength="1024" placeholder="Enter&#x20;URL&#x20;of&#x20;a&#x20;JPG" value=""></label><label><span>Price</span><input type="text" name="price" title="Enter&#x20;price&#x20;as&#x20;nnn.nn" size="16" maxlength="16" placeholder="Enter&#x20;some&#x20;value" value=""></label><fieldset><legend>Expires</legend><label><input type="radio" name="expires" title="The&#x20;expiration&#x20;date&#x20;will&#x20;be&#x20;calculated&#x20;from&#x20;today" class="expiresButton" value="0">Nunca</label><label><input type="radio" name="expires" title="The&#x20;expiration&#x20;date&#x20;will&#x20;be&#x20;calculated&#x20;from&#x20;today" class="expiresButton" value="1">Amanhã</label><label><input type="radio" name="expires" title="The&#x20;expiration&#x20;date&#x20;will&#x20;be&#x20;calculated&#x20;from&#x20;today" class="expiresButton" value="7">Daqui há uma semana</label><label><input type="radio" name="expires" title="The&#x20;expiration&#x20;date&#x20;will&#x20;be&#x20;calculated&#x20;from&#x20;today" class="expiresButton" value="30">Daqui um mês</label></fieldset><label for="cityCode">Nearest City</label><input type="text" name="cityCode" title="Select&#x20;the&#x20;city&#x20;of&#x20;the&#x20;item" id="cityCode" placeholder="Start&#x20;typing&#x20;and&#x20;choose&#x20;the&#x20;city" value=""><label><span>Contact Name</span><input type="text" name="contact_name" title="Enter&#x20;the&#x20;name&#x20;of&#x20;the&#x20;person&#x20;to&#x20;contact&#x20;for&#x20;this&#x20;item" size="40" maxlength="255" value=""></label><label><span>Contact Phone Number</span><input type="text" name="contact_phone" title="Enter&#x20;the&#x20;phone&#x20;number&#x20;of&#x20;the&#x20;person&#x20;to&#x20;contact&#x20;for&#x20;this&#x20;item" size="20" maxlength="32" value=""></label><label><span>Contact Email</span><input type="email" name="contact_email" title="Enter&#x20;the&#x20;email&#x20;address&#x20;of&#x20;the&#x20;person&#x20;to&#x20;contact&#x20;for&#x20;this&#x20;item" size="40" maxlength="255" value=""></label><label><span>Description</span><textarea name="description" title="Enter&#x20;a&#x20;suitable&#x20;description&#x20;for&#x20;this&#x20;posting" rows="4" cols="80"></textarea></label><label><span>Delete Code</span><input type="text" name="delete_code" title="Enter&#x20;the&#x20;delete&#x20;code&#x20;for&#x20;this&#x20;item" size="16" maxlength="16" value=""></label><fieldset><legend>Help us to prevent SPAM!</legend><img width="200" height="50" alt="" src="..&#x2F;captcha&#x2F;8ff96bdea1afa43809d0e220e3238c5f.png"><input name="captcha&#x5B;id&#x5D;" class="captchaStyle" title="Help&#x20;to&#x20;prevent&#x20;SPAM" type="hidden" value="8ff96bdea1afa43809d0e220e3238c5f"><input name="captcha&#x5B;input&#x5D;" class="captchaStyle" title="Help&#x20;to&#x20;prevent&#x20;SPAM" type="text"></fieldset><input type="submit" name="submit" value="Post"></fieldset></form>
+<pre>array(0) {
+}
+</pre>
+
+
+
+    </div>
+    <hr>
+    <footer>
+        <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+    </footer>
+</div> <!-- /container -->
+
+</body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"m7av49gj060pgkecrcq8etm110\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T06:25:10+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Request] => Zend\Uri\Http Object
+                (
+                    [validHostTypes:protected] => 19
+                    [user:protected] => 
+                    [password:protected] => 
+                    [scheme:protected] => http
+                    [userInfo:protected] => 
+                    [host:protected] => localhost
+                    [port:protected] => 
+                    [path:protected] => /cursozf2/public/market/post
+                    [query:protected] => 
+                    [fragment:protected] => 
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T06:25:10+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 200
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ZF2 Skeleton Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Le styles -->
+    <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/css/market/view-post-index.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <!-- Scripts -->
+    <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo-market.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="/cursozf2/public/market">Home</a></li>
+                <li class="active"><a href="/cursozf2/public/market/post">New Post</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container">
+    <div class="col-lg-2">
+        <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+    </div>
+    <div class="col-lg-8">
+        
+<h1>Post Controller</h1>
+
+<form action="" method="POST"><fieldset ><label><span>Category</span><select name="category"><option value="barter">barter</option>
+<option value="beauty">beauty</option>
+<option value="clothing">clothing</option>
+<option value="computer">computer</option>
+<option value="entertainment">entertainment</option>
+<option value="free">free</option>
+<option value="garden">garden</option>
+<option value="general">general</option></select></label><label><span>Title</span><input type="text" name="title" size="60" required="required" placeholder="Digite&#x20;o&#x20;t&#xED;tulo" class="teste" value="" maxlength="128"></label><label><span>Photo</span><input type="text" name="photo_filename" maxlength="1024" placeholder="Enter&#x20;URL&#x20;of&#x20;a&#x20;JPG" value=""></label><label><span>Price</span><input type="text" name="price" title="Enter&#x20;price&#x20;as&#x20;nnn.nn" size="16" maxlength="16" placeholder="Enter&#x20;some&#x20;value" value=""></label><fieldset><legend>Expires</legend><label><input type="radio" name="expires" title="The&#x20;expiration&#x20;date&#x20;will&#x20;be&#x20;calculated&#x20;from&#x20;today" class="expiresButton" value="0">Nunca</label><label><input type="radio" name="expires" title="The&#x20;expiration&#x20;date&#x20;will&#x20;be&#x20;calculated&#x20;from&#x20;today" class="expiresButton" value="1">Amanhã</label><label><input type="radio" name="expires" title="The&#x20;expiration&#x20;date&#x20;will&#x20;be&#x20;calculated&#x20;from&#x20;today" class="expiresButton" value="7">Daqui há uma semana</label><label><input type="radio" name="expires" title="The&#x20;expiration&#x20;date&#x20;will&#x20;be&#x20;calculated&#x20;from&#x20;today" class="expiresButton" value="30">Daqui um mês</label></fieldset><label for="cityCode">Nearest City</label><input type="text" name="cityCode" title="Select&#x20;the&#x20;city&#x20;of&#x20;the&#x20;item" id="cityCode" placeholder="Start&#x20;typing&#x20;and&#x20;choose&#x20;the&#x20;city" value=""><label><span>Contact Name</span><input type="text" name="contact_name" title="Enter&#x20;the&#x20;name&#x20;of&#x20;the&#x20;person&#x20;to&#x20;contact&#x20;for&#x20;this&#x20;item" size="40" maxlength="255" value=""></label><label><span>Contact Phone Number</span><input type="text" name="contact_phone" title="Enter&#x20;the&#x20;phone&#x20;number&#x20;of&#x20;the&#x20;person&#x20;to&#x20;contact&#x20;for&#x20;this&#x20;item" size="20" maxlength="32" value=""></label><label><span>Contact Email</span><input type="email" name="contact_email" title="Enter&#x20;the&#x20;email&#x20;address&#x20;of&#x20;the&#x20;person&#x20;to&#x20;contact&#x20;for&#x20;this&#x20;item" size="40" maxlength="255" value=""></label><label><span>Description</span><textarea name="description" title="Enter&#x20;a&#x20;suitable&#x20;description&#x20;for&#x20;this&#x20;posting" rows="4" cols="80"></textarea></label><label><span>Delete Code</span><input type="text" name="delete_code" title="Enter&#x20;the&#x20;delete&#x20;code&#x20;for&#x20;this&#x20;item" size="16" maxlength="16" value=""></label><fieldset><legend>Help us to prevent SPAM!</legend><img width="200" height="50" alt="" src="..&#x2F;captcha&#x2F;ff21727e7315aadcd9f2e045de556bd1.png"><input name="captcha&#x5B;id&#x5D;" class="captchaStyle" title="Help&#x20;to&#x20;prevent&#x20;SPAM" type="hidden" value="ff21727e7315aadcd9f2e045de556bd1"><input name="captcha&#x5B;input&#x5D;" class="captchaStyle" title="Help&#x20;to&#x20;prevent&#x20;SPAM" type="text"></fieldset><input type="submit" name="submit" value="Post"></fieldset></form>
+<pre>array(0) {
+}
+</pre>
+
+
+
+    </div>
+    <hr>
+    <footer>
+        <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+    </footer>
+</div> <!-- /container -->
+
+</body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"m7av49gj060pgkecrcq8etm110\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T06:26:33+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Request] => Zend\Uri\Http Object
+                (
+                    [validHostTypes:protected] => 19
+                    [user:protected] => 
+                    [password:protected] => 
+                    [scheme:protected] => http
+                    [userInfo:protected] => 
+                    [host:protected] => localhost
+                    [port:protected] => 
+                    [path:protected] => /cursozf2/public/market/post
+                    [query:protected] => 
+                    [fragment:protected] => 
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}
+2015-05-06T06:26:33+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Response] => Array
+                (
+                    [statusCode] => 200
+                    [content] => <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ZF2 Skeleton Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Le styles -->
+    <link href="/cursozf2/public/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/css/market/view-post-index.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/cursozf2/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <!-- Scripts -->
+    <!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/cursozf2/public/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/cursozf2/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/cursozf2/public/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/cursozf2/public/"><img src="/cursozf2/public/img/zf2-logo-market.png" alt="Zend Framework 2"/>&nbsp;Skeleton Application</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="/cursozf2/public/market">Home</a></li>
+                <li class="active"><a href="/cursozf2/public/market/post">New Post</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container">
+    <div class="col-lg-2">
+        <ul style="list-style-type:none;">
+<li><a href="/cursozf2/public/market/view/main/barter">barter</a></li>
+<li><a href="/cursozf2/public/market/view/main/beauty">beauty</a></li>
+<li><a href="/cursozf2/public/market/view/main/clothing">clothing</a></li>
+<li><a href="/cursozf2/public/market/view/main/computer">computer</a></li>
+<li><a href="/cursozf2/public/market/view/main/entertainment">entertainment</a></li>
+<li><a href="/cursozf2/public/market/view/main/free">free</a></li>
+<li><a href="/cursozf2/public/market/view/main/garden">garden</a></li>
+<li><a href="/cursozf2/public/market/view/main/general">general</a></li>
+</ul>
+    </div>
+    <div class="col-lg-8">
+        
+<h1>Post Controller</h1>
+
+<form action="" method="POST"><fieldset ><label><span>Category</span><select name="category"><option value="barter">barter</option>
+<option value="beauty">beauty</option>
+<option value="clothing">clothing</option>
+<option value="computer">computer</option>
+<option value="entertainment">entertainment</option>
+<option value="free">free</option>
+<option value="garden">garden</option>
+<option value="general">general</option></select></label><label><span>Title</span><input type="text" name="title" size="60" required="required" placeholder="Digite&#x20;o&#x20;t&#xED;tulo" class="teste" value="" maxlength="128"></label><label><span>Photo</span><input type="text" name="photo_filename" maxlength="1024" placeholder="Enter&#x20;URL&#x20;of&#x20;a&#x20;JPG" value=""></label><label><span>Price</span><input type="text" name="price" title="Enter&#x20;price&#x20;as&#x20;nnn.nn" size="16" maxlength="16" placeholder="Enter&#x20;some&#x20;value" value=""></label><fieldset><legend>Expires</legend><label><input type="radio" name="expires" title="The&#x20;expiration&#x20;date&#x20;will&#x20;be&#x20;calculated&#x20;from&#x20;today" class="expiresButton" value="0">Nunca</label><label><input type="radio" name="expires" title="The&#x20;expiration&#x20;date&#x20;will&#x20;be&#x20;calculated&#x20;from&#x20;today" class="expiresButton" value="1">Amanhã</label><label><input type="radio" name="expires" title="The&#x20;expiration&#x20;date&#x20;will&#x20;be&#x20;calculated&#x20;from&#x20;today" class="expiresButton" value="7">Daqui há uma semana</label><label><input type="radio" name="expires" title="The&#x20;expiration&#x20;date&#x20;will&#x20;be&#x20;calculated&#x20;from&#x20;today" class="expiresButton" value="30">Daqui um mês</label></fieldset><label for="cityCode">Nearest City</label><input type="text" name="cityCode" title="Select&#x20;the&#x20;city&#x20;of&#x20;the&#x20;item" id="cityCode" placeholder="Start&#x20;typing&#x20;and&#x20;choose&#x20;the&#x20;city" value=""><label><span>Contact Name</span><input type="text" name="contact_name" title="Enter&#x20;the&#x20;name&#x20;of&#x20;the&#x20;person&#x20;to&#x20;contact&#x20;for&#x20;this&#x20;item" size="40" maxlength="255" value=""></label><label><span>Contact Phone Number</span><input type="text" name="contact_phone" title="Enter&#x20;the&#x20;phone&#x20;number&#x20;of&#x20;the&#x20;person&#x20;to&#x20;contact&#x20;for&#x20;this&#x20;item" size="20" maxlength="32" value=""></label><label><span>Contact Email</span><input type="email" name="contact_email" title="Enter&#x20;the&#x20;email&#x20;address&#x20;of&#x20;the&#x20;person&#x20;to&#x20;contact&#x20;for&#x20;this&#x20;item" size="40" maxlength="255" value=""></label><label><span>Description</span><textarea name="description" title="Enter&#x20;a&#x20;suitable&#x20;description&#x20;for&#x20;this&#x20;posting" rows="4" cols="80"></textarea></label><label><span>Delete Code</span><input type="text" name="delete_code" title="Enter&#x20;the&#x20;delete&#x20;code&#x20;for&#x20;this&#x20;item" size="16" maxlength="16" value=""></label><fieldset><legend>Help us to prevent SPAM!</legend><img width="200" height="50" alt="" src="..&#x2F;captcha&#x2F;cd9d0fe8a830d335c76085c4343696d2.png"><input name="captcha&#x5B;id&#x5D;" class="captchaStyle" title="Help&#x20;to&#x20;prevent&#x20;SPAM" type="hidden" value="cd9d0fe8a830d335c76085c4343696d2"><input name="captcha&#x5B;input&#x5D;" class="captchaStyle" title="Help&#x20;to&#x20;prevent&#x20;SPAM" type="text"></fieldset><input type="submit" name="submit" value="Post"></fieldset></form>
+<pre>array(0) {
+}
+</pre>
+
+
+
+    </div>
+    <hr>
+    <footer>
+        <p>&copy; 2005 - 2015 by Zend Technologies Ltd. All rights reserved.</p>
+    </footer>
+</div> <!-- /container -->
+
+</body>
+</html>
+
+                )
+
+        )
+
+)
+ {"Zf2Logger":"{\"sessionId\":\"m7av49gj060pgkecrcq8etm110\",\"host\":\"localhost\",\"ip\":\"::1\"}"}

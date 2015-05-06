@@ -197,7 +197,34 @@ return array(
             'market-post-form' => 'Market\Factory\PostFormFactory',
             'market-post-filter' => 'Market\Factory\PostFilterFactory',
             'listings-table' => 'Market\Factory\ListingsTableFactory',
-        )
+        ),
+        'services' => array(
+            'market-categories' => array(
+                'barter',
+                'beauty',
+                'clothing',
+                'computer',
+                'entertainment',
+                'free',
+                'garden',
+                'general'
+            ),
+            'market-expire-days' => array(
+                0  => 'Nunca',
+                1  => 'Amanhã',
+                7  => 'Daqui há uma semana',
+                30 => 'Daqui um mês',
+            ),
+            'market-captcha-options' => array(
+                'expiration' => 300,
+                'font'        => __DIR__ . '/../../../public/fonts/tahoma.ttf',
+                'fontSize'    => 24,
+                'height'    => 50,
+                'width'        => 200,
+                'imgDir'    => __DIR__ . '/../../../public/captcha',
+                'imgUrl'    => '../captcha',
+            ),
+        ),
     ),
 
     'view_manager' => array(

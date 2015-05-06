@@ -36,6 +36,8 @@ class Module
     public function onDispatch(MvcEvent $e)
     {
         $sm = $e->getApplication()->getServiceManager();
+
+
         $categories = $sm->get("market-categories");
         $vm = $e->getViewModel();
 

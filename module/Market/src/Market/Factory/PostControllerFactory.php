@@ -10,7 +10,7 @@ class PostControllerFactory implements FactoryInterface
 
     public function createService(ServiceLocatorInterface $controllerManager)
     {
-        //echo "PostControllerFactory::createService <br/>";
+        echo "PostControllerFactory::createService <br/>";
 
         $allServices = $controllerManager->getServiceLocator();
         $sm = $allServices->get('ServiceManager');

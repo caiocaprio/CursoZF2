@@ -1,4 +1,7 @@
 <?php
+// Define application environment
+defined('APPLICATION_ENV')
+|| define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'development'));
 /**
  * This makes our life easier when dealing with paths. Everything is relative
  * to the application root now.
@@ -13,5 +16,9 @@ if (php_sapi_name() === 'cli-server' && is_file(__DIR__ . parse_url($_SERVER['RE
 // Setup autoloading
 require 'init_autoloader.php';
 
+// Define application environment
+
+
 // Run the application!
 Zend\Mvc\Application::init(require 'config/application.config.php')->run();
+
