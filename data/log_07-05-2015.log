@@ -1,0 +1,22 @@
+2015-05-07T05:45:52+02:00 DEBUG (7): Array
+(
+    [localhost] => Array
+        (
+            [Request] => Zend\Uri\Http Object
+                (
+                    [validHostTypes:protected] => 19
+                    [user:protected] => 
+                    [password:protected] => 
+                    [scheme:protected] => http
+                    [userInfo:protected] => 
+                    [host:protected] => localhost
+                    [port:protected] => 
+                    [path:protected] => /cursozf2/public/market/postsss
+                    [query:protected] => 
+                    [fragment:protected] => 
+                )
+
+        )
+
+)
+ {"Caprio\\Logger":"{\"sessionId\":\"\",\"host\":\"localhost\",\"ip\":\"::1\"}"}

@@ -71,7 +71,6 @@ class ExceptionEvent  implements  ListenerAggregateInterface
 
         $exception = $event->getResult()->exception;
 
-
         if (isset($exception) && $exception instanceof Exception ) {
             $previous = $exception->getPrevious();
 

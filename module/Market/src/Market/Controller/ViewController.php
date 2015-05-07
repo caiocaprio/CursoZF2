@@ -19,8 +19,6 @@ class ViewController extends BaseController
 {
     use ListingsTableTrait;
 
-
-
     public function indexAction()
     {
         //$this->createLogDb('teste');

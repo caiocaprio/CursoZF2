@@ -8,6 +8,7 @@ use Zend\Log\Filter\Priority;
 use Zend\Log\Logger as ZendLogger;
 use Logger\Service\LoggerService;
 
+
 class LoggerFactory  implements FactoryInterface
 {
     public function createService(ServiceLocatorInterface $sm)
@@ -20,19 +21,34 @@ class LoggerFactory  implements FactoryInterface
         {
             if ($writer['enabled'])
             {
-                $writerAdapter = new $writer['adapter'](
-                    (isset($writer['options']['output']) ? $writer['options']['output'] : "\\data\\").
-                    (isset($writer['options']['filename']) ? $writer['options']['filename'] : "log").'_'.
-                    date((isset($writer['options']['dateFormat']) ? $writer['options']['dateFormat'] : "Y-m-d")).
-                    (isset($writer['options']['extension']) ? $writer['options']['extension'] : ".log")
-                );
+                if($writer['adapter'] == '\Zend\Log\Writer\Stream')
+                {
+                   $writerAdapter = new $writer['adapter'](
+                        (isset($writer['options']['output']) ? $writer['options']['output'] : "\\data\\").
+                        (isset($writer['options']['filename']) ? $writer['options']['filename'] : "log").'_'.
+                        date((isset($writer['options']['dateFormat']) ? $writer['options']['dateFormat'] : "Y-m-d")).
+                        (isset($writer['options']['extension']) ? $writer['options']['extension'] : ".log")
+                    );
 
-                $logger->addWriter($writerAdapter);
-                $writerAdapter->addFilter(
-                    new Priority(
-                        $writer['filter']
-                    )
-                );
+                    $logger->addWriter($writerAdapter);
+                    $writerAdapter->addFilter(
+                        new Priority(
+                            $writer['filter']
+                        )
+                    );
+                }
+
+                if($writer['adapter'] == '\Zend\Log\Writer\Db')
+                {
+                    $writerAdapter = new $writer['adapter'](
+                        $sm->get($writer['options']['output']),//adapter
+                        $writer['options']['tableName'], //table
+                        $writer['options']['columns']); //columns
+
+                    $logger->addWriter($writerAdapter);
+                }
+
+
                 $writers++;
             }
         }

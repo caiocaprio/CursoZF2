@@ -9,20 +9,11 @@ return array(
 
         // multiple zend writer output & zend priority filters
         'writers' => array(
-           /* 'standard-error' => array(
-                'adapter'  => '\Zend\Log\Writer\Stream',
-                'options'  => array(
-                    'output' => 'php://stderr'
-                ),
-                // options: EMERG, ALERT, CRIT, ERR, WARN, NOTICE, INFO, DEBUG
-                'filter' => \Zend\Log\Logger::DEBUG,
-                'enabled' => true
-            ),*/
-            'standard-file' => array(
+            'file' => array(
                 'adapter'  => '\Zend\Log\Writer\Stream',
                 'options'  => array(
                     'output' => 'data/', // path to file
-                    'filename' => 'log_erros', // path to file
+                    'filename' => 'log', // path to file
                     'extension' => '.log', // path to file
                     'dateFormat' => 'd-m-Y', // path to file
                 ),
@@ -30,15 +21,21 @@ return array(
                 'filter' => \Zend\Log\Logger::DEBUG,
                 'enabled' => true
             ),
-           /* 'standard-db' => array(
-                'adapter'  => '\Zend\Log\Writer\Stream',
+            'db' => array(
+                'adapter'  => '\Zend\Log\Writer\Db',
                 'options'  => array(
-                    'output' => '', // path to file
+                    'output' => 'general-adapter', // path to file
+                    'tableName' => 'logs',
+                    'columns' => array(
+                        'timestamp' => 'date',
+                        'priority'  => 'priority',
+                        'message'   => 'message'
+                    ),
                 ),
                 // options: EMERG, ALERT, CRIT, ERR, WARN, NOTICE, INFO, DEBUG
                 'filter' => \Zend\Log\Logger::DEBUG,
                 'enabled' => true
-            ),*/
+            ),
         )
 
 

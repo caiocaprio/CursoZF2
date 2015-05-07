@@ -9,9 +9,8 @@
 
 namespace Logger;
 
-
-use Logger\Service\LoggerService;
 use Zend\Mvc\MvcEvent;
+use Logger\Event\RequestEvent;
 use Logger\Event\ExceptionEvent;
 
 
@@ -24,8 +23,9 @@ class Module
         $eventManager       = $application->getEventManager();
         $serviceManager     = $application->getServiceManager();
 
-
-        $eventManager->attach(new ExceptionEvent($serviceManager->get('Caprio\Logger')));
+        $caprioLoggerService = $serviceManager->get('Caprio\Logger');
+        $eventManager->attach(new ExceptionEvent($caprioLoggerService));
+        $eventManager->attach(new RequestEvent($caprioLoggerService));
 
         return;
     }

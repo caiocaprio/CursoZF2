@@ -43,7 +43,7 @@ class PostController extends BaseController
     {
 
 
-        echo "PostController::indexAction <br/>";
+       // echo "PostController::indexAction <br/>";
         $data = $this->params()->fromPost();
 
 
